@@ -7,6 +7,9 @@ from rdflib.namespace import QB, RDF, XSD
 NS = Namespace("https://sawa.github.io/ontology#")
 NSR = Namespace("https://sawa.github.io/resources/")
 RDFS = Namespace("http://www.w3.org/2000/01/rdf-schema#")
+SDMX_DIMENSION = Namespace("http://purl.org/linked-data/sdmx/2009/dimension#")
+SDMX_MEASURE = Namespace("http://purl.org/linked-data/sdmx/2009/measure#")
+
 hashmap = {}
 absolute_path = os.path.dirname(__file__)
 
@@ -54,12 +57,19 @@ def create_dimensions(collector: Graph):
     collector.add((county, RDFS.label, Literal("Okres", lang="cs")))
     collector.add((county, RDFS.label, Literal("County", lang="en")))
     collector.add((county, RDFS.range, XSD.string))
+    collector.add((county, RDFS.subPropertyOf, SDMX_DIMENSION.refArea))
+    collector.add((county, QB.concept, SDMX_DIMENSION.refArea))
 
     region = NS.region
     collector.add((region, RDF.type, RDFS.Property))
     collector.add((region, RDF.type, QB.DimensionProperty))
     collector.add((region, RDFS.label, Literal("Kraj", lang="cs")))
     collector.add((region, RDFS.label, Literal("Region", lang="en")))
+    collector.add((region, RDF.concept, QB.concept))
+    collector.add((region, RDFS.label, Literal("Reference Area", lang="en")))
+    collector.add((region, RDFS.subPropertyOf, SDMX_DIMENSION.refArea))
+    collector.add((region, QB.concept, SDMX_DIMENSION.refArea))
+
     collector.add((region, RDFS.range, XSD.string))
 
     field_of_care = NS.field_of_care
@@ -68,6 +78,8 @@ def create_dimensions(collector: Graph):
     collector.add((field_of_care, RDFS.label, Literal("OborPece", lang="cs")))
     collector.add((field_of_care, RDFS.label, Literal("FieldOfCare", lang="en")))
     collector.add((field_of_care, RDFS.range, XSD.string))
+    collector.add((field_of_care, RDFS.subPropertyOf, SDMX_DIMENSION.occupation))
+    collector.add((field_of_care, QB.concept, SDMX_DIMENSION.occupation))
 
     return [county, region, field_of_care]
 
@@ -80,6 +92,8 @@ def create_measure(collector: Graph):
     collector.add((measure, RDFS.label, Literal("Pocet", lang="cs")))
     collector.add((measure, RDFS.label, Literal("Measure", lang="en")))
     collector.add((measure, RDFS.range, XSD.integer))
+    collector.add((measure, RDFS.subPropertyOf, SDMX_MEASURE.obsValue))
+    collector.add((measure, QB.concept, SDMX_MEASURE.obsValue))
 
     return [measure]
 
