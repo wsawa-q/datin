@@ -65,7 +65,6 @@ def create_dimensions(collector: Graph):
     collector.add((region, RDF.type, QB.DimensionProperty))
     collector.add((region, RDFS.label, Literal("Kraj", lang="cs")))
     collector.add((region, RDFS.label, Literal("Region", lang="en")))
-    collector.add((region, RDF.concept, QB.concept))
     collector.add((region, RDFS.label, Literal("Reference Area", lang="en")))
     collector.add((region, RDFS.subPropertyOf, SDMX_DIMENSION.refArea))
     collector.add((region, QB.concept, SDMX_DIMENSION.refArea))
