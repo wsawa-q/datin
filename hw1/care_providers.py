@@ -1,8 +1,9 @@
 import csv
 import os
+from datetime import datetime
 
-from rdflib import Graph, BNode, Literal, Namespace
-from rdflib.namespace import QB, RDF, XSD
+from rdflib import Graph, BNode, Literal, Namespace, URIRef
+from rdflib.namespace import QB, RDF, XSD, SKOS, RDFS, DCTERMS, FOAF
 
 NS = Namespace("https://sawa.github.io/ontology#")
 NSR = Namespace("https://sawa.github.io/resources/")
@@ -80,6 +81,15 @@ def create_dimensions(collector: Graph):
     collector.add((field_of_care, RDFS.subPropertyOf, SDMX_DIMENSION.occupation))
     collector.add((field_of_care, QB.concept, SDMX_DIMENSION.occupation))
 
+    collector.add((county, SKOS.prefLabel, Literal("Okres", lang="cs")))
+    collector.add((county, SKOS.prefLabel, Literal("County", lang="en")))
+
+    collector.add((region, SKOS.prefLabel, Literal("Kraj", lang="cs")))
+    collector.add((region, SKOS.prefLabel, Literal("Region", lang="en")))
+
+    collector.add((field_of_care, SKOS.prefLabel, Literal("OborPece", lang="cs")))
+    collector.add((field_of_care, SKOS.prefLabel, Literal("FieldOfCare", lang="en")))
+
     return [county, region, field_of_care]
 
 
@@ -123,6 +133,21 @@ def create_dataset(collector: Graph, structure):
         "Care Providers", lang="en")))
     collector.add((dataset, QB.structure, structure))
 
+    publisher = NSR["publisher"]
+    collector.add((publisher, RDF.type, FOAF.Organization))
+    collector.add((publisher, FOAF.name, Literal("Publisher", lang="en")))
+    collector.add((publisher, FOAF.name, Literal("Vydavatel", lang="cs")))
+    collector.add((dataset, DCTERMS.publisher, publisher))
+
+    license = URIRef("https://example.com/license")
+    collector.add((dataset, DCTERMS.license, license))
+
+    issued = Literal(datetime.now().strftime("%Y-%m-%d"), datatype=XSD.date)
+    collector.add((dataset, DCTERMS.issued, issued))
+
+    modified = Literal(datetime.now().strftime("%Y-%m-%d"), datatype=XSD.date)
+    collector.add((dataset, DCTERMS.modified, modified))
+
     return dataset
 
 
@@ -133,11 +158,37 @@ def create_observations(collector: Graph, dataset, data):
 
 
 def create_observation(collector: Graph, dataset, resource, data):
+    county_uri = NSR[data["Okres"].replace(" ", "_").replace("\"", "")]
+    region_uri = NSR[data["Kraj"].replace(" ", "_").replace("\"", "")]
+    field_of_care_uri = NSR[data["NazevZarizeni"].replace(" ", "_").replace("\"", "")]
+
+    if (county_uri, RDF.type, SKOS.Concept) not in collector:
+        collector.add((county_uri, RDF.type, SKOS.Concept))
+        collector.add((county_uri, SKOS.prefLabel, Literal(
+            data["Okres"], lang="cs")))
+        collector.add((county_uri, SKOS.prefLabel, Literal(
+            data["Okres"], lang="en")))
+    
+    if (region_uri, RDF.type, SKOS.Concept) not in collector:
+        collector.add((region_uri, RDF.type, SKOS.Concept))
+        collector.add((region_uri, SKOS.prefLabel, Literal(
+            data["Kraj"], lang="cs")))
+        collector.add((region_uri, SKOS.prefLabel, Literal(
+            data["Kraj"], lang="en")))
+        
+    if (field_of_care_uri, RDF.type, SKOS.Concept) not in collector:
+        collector.add((field_of_care_uri, RDF.type, SKOS.Concept))
+        collector.add((field_of_care_uri, SKOS.prefLabel, Literal(
+            data["NazevZarizeni"], lang="cs")))
+        collector.add((field_of_care_uri, SKOS.prefLabel, Literal(
+            data["NazevZarizeni"], lang="en")))
+
+
     collector.add((resource, RDF.type, QB.Observation))
     collector.add((resource, QB.dataSet, dataset))
-    collector.add((resource, NS.county, Literal(data["Okres"], lang="cs")))
-    collector.add((resource, NS.region, Literal(data["Kraj"], lang="cs")))
-    collector.add((resource, NS.field_of_care, Literal(data["NazevZarizeni"], lang="cs")))
+    collector.add((resource, NS.county, county_uri))
+    collector.add((resource, NS.region, region_uri))
+    collector.add((resource, NS.field_of_care, field_of_care_uri))
     collector.add((resource, NS.measure, Literal(
         data["measure"], datatype=XSD.integer)))
 

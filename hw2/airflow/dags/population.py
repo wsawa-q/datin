@@ -1,5 +1,5 @@
 import csv
-import os
+import wget
 
 from rdflib import Graph, BNode, Literal, Namespace
 from rdflib.namespace import QB, RDF, XSD
@@ -9,6 +9,17 @@ NSR = Namespace("https://sawa.github.io/resources/")
 RDFS = Namespace("http://www.w3.org/2000/01/rdf-schema#")
 SDMX_DIMENSION = Namespace("http://purl.org/linked-data/sdmx/2009/dimension#")
 SDMX_MEASURE = Namespace("http://purl.org/linked-data/sdmx/2009/measure#")
+
+# https://www.czso.cz/documents/10180/184344914/130141-22data2021.csv
+
+def get_csv():
+    URL = "https://www.czso.cz/documents/10180/184344914/130141-22data2021.csv"
+    population_csv = wget.download(URL)
+
+    URL = "https://skoda.projekty.ms.mff.cuni.cz/ndbi046/seminars/02/%C4%8D%C3%ADseln%C3%ADk-okres%C5%AF-vazba-101-nad%C5%99%C3%ADzen%C3%BD.csv"
+    county_codelist_csv = wget.download(URL)
+
+    return population_csv, county_codelist_csv
 
 def county_codelist_create(path):
     result = {}

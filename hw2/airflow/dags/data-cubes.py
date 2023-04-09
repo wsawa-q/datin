@@ -15,21 +15,22 @@ import care_providers as cp
 
 root = './airflow/'
 output_path = root + "output/"
-input_path = root + "input/"
 
 if not os.path.exists(output_path):
     os.makedirs(output_path)
 
 def calculate_population():
-    hashmap = p.county_codelist_create(input_path)
-    data_as_csv = p.load_csv_file_as_object(input_path + "population.csv")
+    population, county_codelist = p.get_csv()
+    hashmap = p.county_codelist_create(county_codelist)
+    data_as_csv = p.load_csv_file_as_object(population)
     data_cube = p.as_data_cube(data_as_csv, hashmap)
     f = open(output_path + "population.ttl", "w")
     f.write(data_cube.serialize(format="ttl"))
     f.close()
     
 def calculate_health_care():
-    data_as_csv = cp.load_csv_file_as_object(input_path + "care_providers.csv")
+    providers = cp.get_csv()
+    data_as_csv = cp.load_csv_file_as_object(providers)
     for data in data_as_csv:
         data['measure'] = cp.hashmap[(data['Obec'], data['DruhPece'])]
     data_cube = cp.as_data_cube(data_as_csv)

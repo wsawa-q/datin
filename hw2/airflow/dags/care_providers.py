@@ -1,5 +1,5 @@
 import csv
-import os
+import wget
 
 from rdflib import Graph, BNode, Literal, Namespace
 from rdflib.namespace import QB, RDF, XSD
@@ -11,6 +11,14 @@ SDMX_DIMENSION = Namespace("http://purl.org/linked-data/sdmx/2009/dimension#")
 SDMX_MEASURE = Namespace("http://purl.org/linked-data/sdmx/2009/measure#")
 
 hashmap = {}
+
+# https://data.mzcr.cz/distribuce/63/narodni-registr-poskytovatelu-zdravotnich-sluzeb.csv
+
+def get_csv():
+    URL = "https://data.mzcr.cz/distribuce/63/narodni-registr-poskytovatelu-zdravotnich-sluzeb.csv"
+    providers = wget.download(URL)
+
+    return providers
 
 def load_csv_file_as_object(file_path: str):
     result = []

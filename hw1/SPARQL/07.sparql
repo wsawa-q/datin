@@ -1,0 +1,6 @@
+PREFIX qb: <http://purl.org/linked-data/cube#>
+
+ASK {
+    ?sliceKey a qb:SliceKey .
+    FILTER NOT EXISTS { ?dsd qb:sliceKey ?sliceKey }
+}

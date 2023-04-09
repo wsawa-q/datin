@@ -1,0 +1,20 @@
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+ASK {
+    {
+        ?obs qb:dataSet/qb:structure/qb:component/qb:componentProperty ?dim .
+        ?dim a qb:DimensionProperty ;
+            qb:codeList ?list .
+        ?list a skos:ConceptScheme .
+        ?obs ?dim ?v .
+        FILTER NOT EXISTS { ?v a skos:Concept ; skos:inScheme ?list }
+    } UNION {
+        ?obs qb:dataSet/qb:structure/qb:component/qb:componentProperty ?dim .
+        ?dim a qb:DimensionProperty ;
+            qb:codeList ?list .
+        ?list a skos:Collection .
+        ?obs ?dim ?v .
+        FILTER NOT EXISTS { ?v a skos:Concept . ?list skos:member+ ?v }
+    }
+}
