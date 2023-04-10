@@ -12,22 +12,15 @@ SDMX_MEASURE = Namespace("http://purl.org/linked-data/sdmx/2009/measure#")
 
 # https://www.czso.cz/documents/10180/184344914/130141-22data2021.csv
 
-def get_csv():
-    URL = "https://www.czso.cz/documents/10180/184344914/130141-22data2021.csv"
-    population_csv = wget.download(URL)
-
-    URL = "https://skoda.projekty.ms.mff.cuni.cz/ndbi046/seminars/02/%C4%8D%C3%ADseln%C3%ADk-okres%C5%AF-vazba-101-nad%C5%99%C3%ADzen%C3%BD.csv"
-    county_codelist_csv = wget.download(URL)
-
-    return population_csv, county_codelist_csv
-
 def county_codelist_create(path):
     result = {}
-    with open(path + "/county_codelist.csv", "r") as stream:
+    with open(path, "r") as stream:
         reader = csv.reader(stream)
         next(reader)
         for line in reader:
-            result[line[8]] = line[4]
+            if len(line) > 0:
+                print(line)
+                result[line[8]] = line[4]
     return result
 
 

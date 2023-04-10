@@ -12,14 +12,6 @@ SDMX_MEASURE = Namespace("http://purl.org/linked-data/sdmx/2009/measure#")
 
 hashmap = {}
 
-# https://data.mzcr.cz/distribuce/63/narodni-registr-poskytovatelu-zdravotnich-sluzeb.csv
-
-def get_csv():
-    URL = "https://data.mzcr.cz/distribuce/63/narodni-registr-poskytovatelu-zdravotnich-sluzeb.csv"
-    providers = wget.download(URL)
-
-    return providers
-
 def load_csv_file_as_object(file_path: str):
     result = []
     with open(file_path, "r", errors='ignore') as stream:
@@ -71,9 +63,11 @@ def create_dimensions(collector: Graph):
     collector.add((field_of_care, RDF.type, RDFS.Property))
     collector.add((field_of_care, RDF.type, QB.DimensionProperty))
     collector.add((field_of_care, RDFS.label, Literal("OborPece", lang="cs")))
-    collector.add((field_of_care, RDFS.label, Literal("FieldOfCare", lang="en")))
+    collector.add((field_of_care, RDFS.label,
+                  Literal("FieldOfCare", lang="en")))
     collector.add((field_of_care, RDFS.range, XSD.string))
-    collector.add((field_of_care, RDFS.subPropertyOf, SDMX_DIMENSION.occupation))
+    collector.add((field_of_care, RDFS.subPropertyOf,
+                  SDMX_DIMENSION.occupation))
     collector.add((field_of_care, QB.concept, SDMX_DIMENSION.occupation))
 
     return [county, region, field_of_care]
@@ -133,6 +127,7 @@ def create_observation(collector: Graph, dataset, resource, data):
     collector.add((resource, QB.dataSet, dataset))
     collector.add((resource, NS.county, Literal(data["Okres"], lang="cs")))
     collector.add((resource, NS.region, Literal(data["Kraj"], lang="cs")))
-    collector.add((resource, NS.field_of_care, Literal(data["NazevZarizeni"], lang="cs")))
+    collector.add((resource, NS.field_of_care, Literal(
+        data["NazevZarizeni"], lang="cs")))
     collector.add((resource, NS.measure, Literal(
         data["measure"], datatype=XSD.integer)))
