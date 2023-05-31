@@ -33,7 +33,11 @@ sawa:me a foaf:Organization ;
 sawa:MyDistribution a dcat:distribution ;
     dcat:accessURL <https://sawa.github.io/datasets/population> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/zip> ;
-    spdx:checksum "C949A908BDC0B984F2ADCDBAF6C335766B69653A97B7A7D29F9DCF795F8A27E9"^^xsd:hexBinary .
+    spdx:checksum [
+    a spdx:Checksum ;
+      spdx:algorithm spdx:checksumAlgorithm_sha256 ;
+      spdx:checksumValue "C949A908BDC0B984F2ADCDBAF6C335766B69653A97B7A7D29F9DCF795F8A27E9"^^xsd:hexBinary
+    ] .
 
 sawa:GeographicalAreas a skos:ConceptScheme ;
   skos:prefLabel "Geo area"@en .
