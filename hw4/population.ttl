@@ -9,6 +9,7 @@
 @prefix eurovoc: <http://eurovoc.europa.eu/> .
 @prefix sawa: <https://sawa.github.io/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
 
 <https://sawa.github.io/resources/dataCubeInstance> a ns1:DataSet ;
     rdfs:label "Population 2021"@en ;
@@ -30,8 +31,9 @@ sawa:me a foaf:Organization ;
     foaf:name "My organization" .
 
 sawa:MyDistribution a dcat:distribution ;
-    dcat:accessURL <https://sawa.github.io/datasets/population>
-    dcat:mediaType <https://www.iana.org/assignments/media-types/application/zip> .
+    dcat:accessURL <https://sawa.github.io/datasets/population> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/zip> ;
+    spdx:checksum "C949A908BDC0B984F2ADCDBAF6C335766B69653A97B7A7D29F9DCF795F8A27E9"^^xsd:hexBinary .
 
 sawa:GeographicalAreas a skos:ConceptScheme ;
   skos:prefLabel "Geo area"@en .
