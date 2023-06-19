@@ -1,0 +1,60 @@
+@prefix ns1: <http://purl.org/linked-data/cube#> .
+@prefix ns3: <https://sawa.github.io/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix freq: <http://purl.org/cld/freq/> .
+@prefix eurovoc: <http://eurovoc.europa.eu/> .
+@prefix sawa: <https://sawa.github.io/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+
+<https://sawa.github.io/resources/dataCubeInstance> a ns1:DataSet ;
+    rdfs:label "Population 2021"@en ;
+    dct:issued "2023-04-02"^^xsd:date ;
+    dct:license <https://example.com/license> ;
+    dct:modified "2023-04-02"^^xsd:date ;
+    dct:publisher <https://sawa.github.io/resources/publisher> ;
+    ns1:structure ns3:structure ;
+    dct:title "Population"@en ;
+    dct:description "This is a data cube is related to population."@en ;
+    dct:publisher sawa:me ;
+    dct:accrualPeriodicity freq:monthly ;
+    dct:spatial <https://www.wikidata.org/wiki/Q213>, sawa:Region1 ;
+    dct:theme eurovoc:100210 ;
+    dcat:keyword "data cube"@en , "CZ"@en , "population"@en ;
+    dcat:distribution sawa:MyDistribution ;
+
+sawa:me a foaf:Organization ;
+    foaf:name "My organization" .
+
+sawa:MyDistribution a dcat:distribution ;
+    dcat:accessURL <https://sawa.github.io/datasets/population> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/zip> ;
+    spdx:checksum [
+    a spdx:Checksum ;
+      spdx:algorithm spdx:checksumAlgorithm_sha256 ;
+      spdx:checksumValue "64D0E3D32436AFDCCE323BF28BA9DB0BAEFDB4F68057A1BABAC341049B162B00"^^xsd:hexBinary
+    ] .
+
+sawa:GeographicalAreas a skos:ConceptScheme ;
+  skos:prefLabel "Geo area"@en ;
+  skos:hasTopConcept sawa:Region1 .
+
+sawa:Region1 a skos:Concept ;
+  skos:inScheme sawa:GeographicalAreas ;
+  skos:prefLabel "Region 1"@en ;
+  skos:narrower sawa:District1 , sawa:District2 .
+
+sawa:District1 a skos:Concept ;
+  skos:inScheme sawa:GeographicalAreas ;
+  skos:prefLabel "District 1.1"@en ;
+  skos:broader sawa:Region1 .
+
+sawa:District2 a skos:Concept ;
+  skos:inScheme sawa:GeographicalAreas ;
+  skos:prefLabel "District 1.2"@en ;
+  skos:broader sawa:Region1 .
+
