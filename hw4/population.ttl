@@ -40,7 +40,7 @@ sawa:MyDistribution a dcat:distribution ;
     ] .
 
 sawa:GeographicalAreas a skos:ConceptScheme ;
-  skos:prefLabel "Geo area"@en .
+  skos:prefLabel "Geo area"@en . 
   skos:hasTopConcept sawa:Region1 .
 
 sawa:Region1 a skos:Concept ;
