@@ -24,7 +24,7 @@ def main():
 
 def county_codelist_create():
     result = {}
-    with open(absolute_path + "/county_codelist.csv", "r") as stream:
+    with open(absolute_path + "/county_codelist.csv", "r", errors='ignore') as stream:
         reader = csv.reader(stream)
         next(reader)
         for line in reader:
@@ -34,7 +34,7 @@ def county_codelist_create():
 
 def load_csv_file_as_object(file_path: str):
     result = []
-    with open(file_path, "r") as stream:
+    with open(file_path, "r", errors='ignore') as stream:
         reader = csv.reader(stream)
         header = next(reader)  # Skip header
         for line in reader:
@@ -50,11 +50,12 @@ def as_data_cube(data, hashmap):
     structure = create_structure(result, dimensions, measures)
     dataset = create_dataset(result, structure)
     create_observations(result, dataset, data, hashmap)
+    create_geographical_areas(result)
+
     return result
 
 
 def create_dimensions(collector: Graph):
-
     county = NS.county
     collector.add((county, RDF.type, RDFS.Property))
     collector.add((county, RDF.type, QB.DimensionProperty))
@@ -172,6 +173,33 @@ def create_observation(collector: Graph, dataset, resource, data, hashmap):
     collector.add((resource, NS.measure, Literal(
         data["hodnota"], datatype=XSD.integer)))
 
+
+def create_geographical_areas(collector: Graph):
+    geo_areas = URIRef(NSR["GeographicalAreas"])
+    region1 = URIRef(NSR["Region1"])
+    district1 = URIRef(NSR["District1"])
+    district2 = URIRef(NSR["District2"])
+
+    collector.add((geo_areas, RDF.type, QB.DataSet))
+    collector.add((geo_areas, RDFS.label, Literal("Geo area", lang="en")))
+    collector.add((geo_areas, SKOS.hasTopConcept, region1))
+
+    collector.add((region1, RDF.type, SKOS.Concept))
+    collector.add((region1, SKOS.prefLabel, Literal("Region 1", lang="en")))
+    collector.add((region1, SKOS.narrower, district1))
+    collector.add((region1, SKOS.narrower, district2))
+    collector.add((region1, SKOS.topConceptOf, geo_areas))
+    collector.add((region1, SKOS.inScheme, geo_areas))
+
+    collector.add((district1, RDF.type, SKOS.Concept))
+    collector.add((district1, SKOS.prefLabel, Literal("District 1", lang="en")))
+    collector.add((district1, SKOS.broader, region1))
+    collector.add((district1, SKOS.inScheme, geo_areas))
+
+    collector.add((district2, RDF.type, SKOS.Concept))
+    collector.add((district2, SKOS.prefLabel, Literal("District 2", lang="en")))
+    collector.add((district2, SKOS.broader, region1))
+    collector.add((district2, SKOS.inScheme, geo_areas))
 
 if __name__ == "__main__":
     main()

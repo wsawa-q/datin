@@ -1,1117 +1,1138 @@
-@prefix ns1: <http://purl.org/linked-data/cube#> .
-@prefix ns2: <http://www.w3.org/2004/02/skos/core#> .
+@prefix ns1: <http://www.w3.org/2004/02/skos/core#> .
+@prefix ns2: <http://purl.org/linked-data/cube#> .
 @prefix ns3: <https://sawa.github.io/ontology#> .
 @prefix ns4: <http://xmlns.com/foaf/0.1/> .
 @prefix ns5: <http://purl.org/dc/terms/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://sawa.github.io/resources/observation-000> a ns1:Observation ;
-    ns1:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
+<https://sawa.github.io/resources/observation-000> a ns2:Observation ;
+    ns2:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
     ns3:county <https://sawa.github.io/resources/40517> ;
     ns3:measure 116930 ;
     ns3:region <https://sawa.github.io/resources/CZ0427> .
 
-<https://sawa.github.io/resources/observation-001> a ns1:Observation ;
-    ns1:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
+<https://sawa.github.io/resources/observation-001> a ns2:Observation ;
+    ns2:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
     ns3:county <https://sawa.github.io/resources/40592> ;
     ns3:measure 78479 ;
     ns3:region <https://sawa.github.io/resources/CZ0524> .
 
-<https://sawa.github.io/resources/observation-002> a ns1:Observation ;
-    ns1:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
+<https://sawa.github.io/resources/observation-002> a ns2:Observation ;
+    ns2:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
     ns3:county <https://sawa.github.io/resources/40550> ;
     ns3:measure 71593 ;
     ns3:region <https://sawa.github.io/resources/CZ0514> .
 
-<https://sawa.github.io/resources/observation-003> a ns1:Observation ;
-    ns1:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
+<https://sawa.github.io/resources/observation-003> a ns2:Observation ;
+    ns2:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
     ns3:county <https://sawa.github.io/resources/40576> ;
     ns3:measure 78763 ;
     ns3:region <https://sawa.github.io/resources/CZ0522> .
 
-<https://sawa.github.io/resources/observation-004> a ns1:Observation ;
-    ns1:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
+<https://sawa.github.io/resources/observation-004> a ns2:Observation ;
+    ns2:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
     ns3:county <https://sawa.github.io/resources/40614> ;
     ns3:measure 103657 ;
     ns3:region <https://sawa.github.io/resources/CZ0531> .
 
-<https://sawa.github.io/resources/observation-005> a ns1:Observation ;
-    ns1:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
+<https://sawa.github.io/resources/observation-005> a ns2:Observation ;
+    ns2:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
     ns3:county <https://sawa.github.io/resources/40711> ;
     ns3:measure 378424 ;
     ns3:region <https://sawa.github.io/resources/CZ0642> .
 
-<https://sawa.github.io/resources/observation-006> a ns1:Observation ;
-    ns1:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
+<https://sawa.github.io/resources/observation-006> a ns2:Observation ;
+    ns2:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
     ns3:county <https://sawa.github.io/resources/40738> ;
     ns3:measure 114758 ;
     ns3:region <https://sawa.github.io/resources/CZ0644> .
 
-<https://sawa.github.io/resources/observation-007> a ns1:Observation ;
-    ns1:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
+<https://sawa.github.io/resources/observation-007> a ns2:Observation ;
+    ns2:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
     ns3:county <https://sawa.github.io/resources/40231> ;
     ns3:measure 100584 ;
     ns3:region <https://sawa.github.io/resources/CZ0208> .
 
-<https://sawa.github.io/resources/observation-008> a ns1:Observation ;
-    ns1:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
+<https://sawa.github.io/resources/observation-008> a ns2:Observation ;
+    ns2:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
     ns3:county <https://sawa.github.io/resources/40754> ;
     ns3:measure 91984 ;
     ns3:region <https://sawa.github.io/resources/CZ0646> .
 
-<https://sawa.github.io/resources/observation-009> a ns1:Observation ;
-    ns1:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
+<https://sawa.github.io/resources/observation-009> a ns2:Observation ;
+    ns2:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
     ns3:county <https://sawa.github.io/resources/40797> ;
     ns3:measure 107697 ;
     ns3:region <https://sawa.github.io/resources/CZ0713> .
 
-<https://sawa.github.io/resources/observation-010> a ns1:Observation ;
-    ns1:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
+<https://sawa.github.io/resources/observation-010> a ns2:Observation ;
+    ns2:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
     ns3:county <https://sawa.github.io/resources/40801> ;
     ns3:measure 126826 ;
     ns3:region <https://sawa.github.io/resources/CZ0714> .
 
-<https://sawa.github.io/resources/observation-011> a ns1:Observation ;
-    ns1:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
+<https://sawa.github.io/resources/observation-011> a ns2:Observation ;
+    ns2:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
     ns3:county <https://sawa.github.io/resources/40363> ;
     ns3:measure 84661 ;
     ns3:region <https://sawa.github.io/resources/CZ0322> .
 
-<https://sawa.github.io/resources/observation-012> a ns1:Observation ;
-    ns1:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
+<https://sawa.github.io/resources/observation-012> a ns2:Observation ;
+    ns2:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
     ns3:county <https://sawa.github.io/resources/40401> ;
     ns3:measure 48587 ;
     ns3:region <https://sawa.github.io/resources/CZ0326> .
 
-<https://sawa.github.io/resources/observation-013> a ns1:Observation ;
-    ns1:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
+<https://sawa.github.io/resources/observation-013> a ns2:Observation ;
+    ns2:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
     ns3:county <https://sawa.github.io/resources/40428> ;
     ns3:measure 88030 ;
     ns3:region <https://sawa.github.io/resources/CZ0411> .
 
-<https://sawa.github.io/resources/observation-014> a ns1:Observation ;
-    ns1:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
+<https://sawa.github.io/resources/observation-014> a ns2:Observation ;
+    ns2:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
     ns3:county <https://sawa.github.io/resources/40843> ;
     ns3:measure 140392 ;
     ns3:region <https://sawa.github.io/resources/CZ0723> .
 
-<https://sawa.github.io/resources/observation-015> a ns1:Observation ;
-    ns1:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
+<https://sawa.github.io/resources/observation-015> a ns2:Observation ;
+    ns2:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
     ns3:county <https://sawa.github.io/resources/40851> ;
     ns3:measure 188947 ;
     ns3:region <https://sawa.github.io/resources/CZ0724> .
 
-<https://sawa.github.io/resources/observation-016> a ns1:Observation ;
-    ns1:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
+<https://sawa.github.io/resources/observation-016> a ns2:Observation ;
+    ns2:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
     ns3:county <https://sawa.github.io/resources/40215> ;
     ns3:measure 108889 ;
     ns3:region <https://sawa.github.io/resources/CZ0206> .
 
-<https://sawa.github.io/resources/observation-017> a ns1:Observation ;
-    ns1:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
+<https://sawa.github.io/resources/observation-017> a ns2:Observation ;
+    ns2:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
     ns3:county <https://sawa.github.io/resources/40240> ;
     ns3:measure 186558 ;
     ns3:region <https://sawa.github.io/resources/CZ0209> .
 
-<https://sawa.github.io/resources/observation-018> a ns1:Observation ;
-    ns1:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
+<https://sawa.github.io/resources/observation-018> a ns2:Observation ;
+    ns2:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
     ns3:county <https://sawa.github.io/resources/40274> ;
     ns3:measure 54767 ;
     ns3:region <https://sawa.github.io/resources/CZ020C> .
 
-<https://sawa.github.io/resources/observation-019> a ns1:Observation ;
-    ns1:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
+<https://sawa.github.io/resources/observation-019> a ns2:Observation ;
+    ns2:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
     ns3:county <https://sawa.github.io/resources/40312> ;
     ns3:measure 70582 ;
     ns3:region <https://sawa.github.io/resources/CZ0314> .
 
-<https://sawa.github.io/resources/observation-020> a ns1:Observation ;
-    ns1:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
+<https://sawa.github.io/resources/observation-020> a ns2:Observation ;
+    ns2:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
     ns3:county <https://sawa.github.io/resources/40371> ;
     ns3:measure 187985 ;
     ns3:region <https://sawa.github.io/resources/CZ0323> .
 
-<https://sawa.github.io/resources/observation-021> a ns1:Observation ;
-    ns1:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
+<https://sawa.github.io/resources/observation-021> a ns2:Observation ;
+    ns2:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
     ns3:county <https://sawa.github.io/resources/40452> ;
     ns3:measure 126492 ;
     ns3:region <https://sawa.github.io/resources/CZ0421> .
 
-<https://sawa.github.io/resources/observation-022> a ns1:Observation ;
-    ns1:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
+<https://sawa.github.io/resources/observation-022> a ns2:Observation ;
+    ns2:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
     ns3:county <https://sawa.github.io/resources/40568> ;
     ns3:measure 162193 ;
     ns3:region <https://sawa.github.io/resources/CZ0521> .
 
-<https://sawa.github.io/resources/observation-023> a ns1:Observation ;
-    ns1:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
+<https://sawa.github.io/resources/observation-023> a ns2:Observation ;
+    ns2:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
     ns3:county <https://sawa.github.io/resources/40878> ;
     ns3:measure 212422 ;
     ns3:region <https://sawa.github.io/resources/CZ0802> .
 
-<https://sawa.github.io/resources/observation-024> a ns1:Observation ;
-    ns1:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
+<https://sawa.github.io/resources/observation-024> a ns2:Observation ;
+    ns2:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
     ns3:county <https://sawa.github.io/resources/40291> ;
     ns3:measure 60033 ;
     ns3:region <https://sawa.github.io/resources/CZ0312> .
 
-<https://sawa.github.io/resources/observation-025> a ns1:Observation ;
-    ns1:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
+<https://sawa.github.io/resources/observation-025> a ns2:Observation ;
+    ns2:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
     ns3:county <https://sawa.github.io/resources/40398> ;
     ns3:measure 80228 ;
     ns3:region <https://sawa.github.io/resources/CZ0325> .
 
-<https://sawa.github.io/resources/observation-026> a ns1:Observation ;
-    ns1:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
+<https://sawa.github.io/resources/observation-026> a ns2:Observation ;
+    ns2:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
     ns3:county <https://sawa.github.io/resources/40177> ;
     ns3:measure 95823 ;
     ns3:region <https://sawa.github.io/resources/CZ0202> .
 
-<https://sawa.github.io/resources/observation-027> a ns1:Observation ;
-    ns1:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
+<https://sawa.github.io/resources/observation-027> a ns2:Observation ;
+    ns2:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
     ns3:county <https://sawa.github.io/resources/40223> ;
     ns3:measure 127221 ;
     ns3:region <https://sawa.github.io/resources/CZ0207> .
 
-<https://sawa.github.io/resources/observation-028> a ns1:Observation ;
-    ns1:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
+<https://sawa.github.io/resources/observation-028> a ns2:Observation ;
+    ns2:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
     ns3:county <https://sawa.github.io/resources/40771> ;
     ns3:measure 36884 ;
     ns3:region <https://sawa.github.io/resources/CZ0711> .
 
-<https://sawa.github.io/resources/observation-029> a ns1:Observation ;
-    ns1:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
+<https://sawa.github.io/resources/observation-029> a ns2:Observation ;
+    ns2:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
     ns3:county <https://sawa.github.io/resources/40207> ;
     ns3:measure 75402 ;
     ns3:region <https://sawa.github.io/resources/CZ0205> .
 
-<https://sawa.github.io/resources/observation-030> a ns1:Observation ;
-    ns1:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
+<https://sawa.github.io/resources/observation-030> a ns2:Observation ;
+    ns2:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
     ns3:county <https://sawa.github.io/resources/40169> ;
     ns3:measure 99008 ;
     ns3:region <https://sawa.github.io/resources/CZ0201> .
 
-<https://sawa.github.io/resources/observation-031> a ns1:Observation ;
-    ns1:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
+<https://sawa.github.io/resources/observation-031> a ns2:Observation ;
+    ns2:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
     ns3:county <https://sawa.github.io/resources/40258> ;
     ns3:measure 149990 ;
     ns3:region <https://sawa.github.io/resources/CZ020A> .
 
-<https://sawa.github.io/resources/observation-032> a ns1:Observation ;
-    ns1:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
+<https://sawa.github.io/resources/observation-032> a ns2:Observation ;
+    ns2:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
     ns3:county <https://sawa.github.io/resources/40266> ;
     ns3:measure 114060 ;
     ns3:region <https://sawa.github.io/resources/CZ020B> .
 
-<https://sawa.github.io/resources/observation-033> a ns1:Observation ;
-    ns1:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
+<https://sawa.github.io/resources/observation-033> a ns2:Observation ;
+    ns2:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
     ns3:county <https://sawa.github.io/resources/40282> ;
     ns3:measure 194994 ;
     ns3:region <https://sawa.github.io/resources/CZ0311> .
 
-<https://sawa.github.io/resources/observation-034> a ns1:Observation ;
-    ns1:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
+<https://sawa.github.io/resources/observation-034> a ns2:Observation ;
+    ns2:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
     ns3:county <https://sawa.github.io/resources/40321> ;
     ns3:measure 50225 ;
     ns3:region <https://sawa.github.io/resources/CZ0315> .
 
-<https://sawa.github.io/resources/observation-035> a ns1:Observation ;
-    ns1:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
+<https://sawa.github.io/resources/observation-035> a ns2:Observation ;
+    ns2:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
     ns3:county <https://sawa.github.io/resources/40860> ;
     ns3:measure 89906 ;
     ns3:region <https://sawa.github.io/resources/CZ0801> .
 
-<https://sawa.github.io/resources/observation-036> a ns1:Observation ;
-    ns1:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
+<https://sawa.github.io/resources/observation-036> a ns2:Observation ;
+    ns2:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
     ns3:county <https://sawa.github.io/resources/40894> ;
     ns3:measure 149907 ;
     ns3:region <https://sawa.github.io/resources/CZ0804> .
 
-<https://sawa.github.io/resources/observation-037> a ns1:Observation ;
-    ns1:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
+<https://sawa.github.io/resources/observation-037> a ns2:Observation ;
+    ns2:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
     ns3:county <https://sawa.github.io/resources/40916> ;
     ns3:measure 312908 ;
     ns3:region <https://sawa.github.io/resources/CZ0806> .
 
-<https://sawa.github.io/resources/observation-038> a ns1:Observation ;
-    ns1:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
+<https://sawa.github.io/resources/observation-038> a ns2:Observation ;
+    ns2:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
     ns3:county <https://sawa.github.io/resources/40304> ;
     ns3:measure 89325 ;
     ns3:region <https://sawa.github.io/resources/CZ0313> .
 
-<https://sawa.github.io/resources/observation-039> a ns1:Observation ;
-    ns1:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
+<https://sawa.github.io/resources/observation-039> a ns2:Observation ;
+    ns2:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
     ns3:county <https://sawa.github.io/resources/40355> ;
     ns3:measure 54313 ;
     ns3:region <https://sawa.github.io/resources/CZ0321> .
 
-<https://sawa.github.io/resources/observation-040> a ns1:Observation ;
-    ns1:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
+<https://sawa.github.io/resources/observation-040> a ns2:Observation ;
+    ns2:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
     ns3:county <https://sawa.github.io/resources/40436> ;
     ns3:measure 110195 ;
     ns3:region <https://sawa.github.io/resources/CZ0412> .
 
-<https://sawa.github.io/resources/observation-041> a ns1:Observation ;
-    ns1:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
+<https://sawa.github.io/resources/observation-041> a ns2:Observation ;
+    ns2:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
     ns3:county <https://sawa.github.io/resources/40380> ;
     ns3:measure 68623 ;
     ns3:region <https://sawa.github.io/resources/CZ0324> .
 
-<https://sawa.github.io/resources/observation-042> a ns1:Observation ;
-    ns1:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
+<https://sawa.github.io/resources/observation-042> a ns2:Observation ;
+    ns2:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
     ns3:county <https://sawa.github.io/resources/40479> ;
     ns3:measure 117473 ;
     ns3:region <https://sawa.github.io/resources/CZ0423> .
 
-<https://sawa.github.io/resources/observation-043> a ns1:Observation ;
-    ns1:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
+<https://sawa.github.io/resources/observation-043> a ns2:Observation ;
+    ns2:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
     ns3:county <https://sawa.github.io/resources/40509> ;
     ns3:measure 124401 ;
     ns3:region <https://sawa.github.io/resources/CZ0426> .
 
-<https://sawa.github.io/resources/observation-044> a ns1:Observation ;
-    ns1:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
+<https://sawa.github.io/resources/observation-044> a ns2:Observation ;
+    ns2:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
     ns3:county <https://sawa.github.io/resources/40649> ;
     ns3:measure 135977 ;
     ns3:region <https://sawa.github.io/resources/CZ0534> .
 
-<https://sawa.github.io/resources/observation-045> a ns1:Observation ;
-    ns1:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
+<https://sawa.github.io/resources/observation-045> a ns2:Observation ;
+    ns2:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
     ns3:county <https://sawa.github.io/resources/40525> ;
     ns3:measure 101997 ;
     ns3:region <https://sawa.github.io/resources/CZ0511> .
 
-<https://sawa.github.io/resources/observation-046> a ns1:Observation ;
-    ns1:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
+<https://sawa.github.io/resources/observation-046> a ns2:Observation ;
+    ns2:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
     ns3:county <https://sawa.github.io/resources/40541> ;
     ns3:measure 173337 ;
     ns3:region <https://sawa.github.io/resources/CZ0513> .
 
-<https://sawa.github.io/resources/observation-047> a ns1:Observation ;
-    ns1:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
+<https://sawa.github.io/resources/observation-047> a ns2:Observation ;
+    ns2:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
     ns3:county <https://sawa.github.io/resources/40584> ;
     ns3:measure 108092 ;
     ns3:region <https://sawa.github.io/resources/CZ0523> .
 
-<https://sawa.github.io/resources/observation-048> a ns1:Observation ;
-    ns1:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
+<https://sawa.github.io/resources/observation-048> a ns2:Observation ;
+    ns2:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
     ns3:county <https://sawa.github.io/resources/40606> ;
     ns3:measure 115365 ;
     ns3:region <https://sawa.github.io/resources/CZ0525> .
 
-<https://sawa.github.io/resources/observation-049> a ns1:Observation ;
-    ns1:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
+<https://sawa.github.io/resources/observation-049> a ns2:Observation ;
+    ns2:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
     ns3:county <https://sawa.github.io/resources/40762> ;
     ns3:measure 113389 ;
     ns3:region <https://sawa.github.io/resources/CZ0647> .
 
-<https://sawa.github.io/resources/observation-050> a ns1:Observation ;
-    ns1:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
+<https://sawa.github.io/resources/observation-050> a ns2:Observation ;
+    ns2:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
     ns3:county <https://sawa.github.io/resources/40657> ;
     ns3:measure 93521 ;
     ns3:region <https://sawa.github.io/resources/CZ0631> .
 
-<https://sawa.github.io/resources/observation-051> a ns1:Observation ;
-    ns1:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
+<https://sawa.github.io/resources/observation-051> a ns2:Observation ;
+    ns2:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
     ns3:county <https://sawa.github.io/resources/40622> ;
     ns3:measure 171461 ;
     ns3:region <https://sawa.github.io/resources/CZ0532> .
 
-<https://sawa.github.io/resources/observation-052> a ns1:Observation ;
-    ns1:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
+<https://sawa.github.io/resources/observation-052> a ns2:Observation ;
+    ns2:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
     ns3:county <https://sawa.github.io/resources/40681> ;
     ns3:measure 109373 ;
     ns3:region <https://sawa.github.io/resources/CZ0634> .
 
-<https://sawa.github.io/resources/observation-053> a ns1:Observation ;
-    ns1:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
+<https://sawa.github.io/resources/observation-053> a ns2:Observation ;
+    ns2:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
     ns3:county <https://sawa.github.io/resources/40819> ;
     ns3:measure 118618 ;
     ns3:region <https://sawa.github.io/resources/CZ0715> .
 
-<https://sawa.github.io/resources/observation-054> a ns1:Observation ;
-    ns1:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
+<https://sawa.github.io/resources/observation-054> a ns2:Observation ;
+    ns2:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
     ns3:county <https://sawa.github.io/resources/40193> ;
     ns3:measure 103345 ;
     ns3:region <https://sawa.github.io/resources/CZ0204> .
 
-<https://sawa.github.io/resources/observation-055> a ns1:Observation ;
-    ns1:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
+<https://sawa.github.io/resources/observation-055> a ns2:Observation ;
+    ns2:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
     ns3:county <https://sawa.github.io/resources/40673> ;
     ns3:measure 71457 ;
     ns3:region <https://sawa.github.io/resources/CZ0633> .
 
-<https://sawa.github.io/resources/observation-056> a ns1:Observation ;
-    ns1:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
+<https://sawa.github.io/resources/observation-056> a ns2:Observation ;
+    ns2:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
     ns3:county <https://sawa.github.io/resources/40690> ;
     ns3:measure 117181 ;
     ns3:region <https://sawa.github.io/resources/CZ0635> .
 
-<https://sawa.github.io/resources/observation-057> a ns1:Observation ;
-    ns1:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
+<https://sawa.github.io/resources/observation-057> a ns2:Observation ;
+    ns2:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
     ns3:county <https://sawa.github.io/resources/40703> ;
     ns3:measure 107795 ;
     ns3:region <https://sawa.github.io/resources/CZ0641> .
 
-<https://sawa.github.io/resources/observation-058> a ns1:Observation ;
-    ns1:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
+<https://sawa.github.io/resources/observation-058> a ns2:Observation ;
+    ns2:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
     ns3:county <https://sawa.github.io/resources/40746> ;
     ns3:measure 151344 ;
     ns3:region <https://sawa.github.io/resources/CZ0645> .
 
-<https://sawa.github.io/resources/observation-059> a ns1:Observation ;
-    ns1:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
+<https://sawa.github.io/resources/observation-059> a ns2:Observation ;
+    ns2:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
     ns3:county <https://sawa.github.io/resources/40631> ;
     ns3:measure 102799 ;
     ns3:region <https://sawa.github.io/resources/CZ0533> .
 
-<https://sawa.github.io/resources/observation-060> a ns1:Observation ;
-    ns1:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
+<https://sawa.github.io/resources/observation-060> a ns2:Observation ;
+    ns2:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
     ns3:county <https://sawa.github.io/resources/40665> ;
     ns3:measure 112206 ;
     ns3:region <https://sawa.github.io/resources/CZ0632> .
 
-<https://sawa.github.io/resources/observation-061> a ns1:Observation ;
-    ns1:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
+<https://sawa.github.io/resources/observation-061> a ns2:Observation ;
+    ns2:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
     ns3:county <https://sawa.github.io/resources/40720> ;
     ns3:measure 224794 ;
     ns3:region <https://sawa.github.io/resources/CZ0643> .
 
-<https://sawa.github.io/resources/observation-062> a ns1:Observation ;
-    ns1:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
+<https://sawa.github.io/resources/observation-062> a ns2:Observation ;
+    ns2:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
     ns3:county <https://sawa.github.io/resources/40835> ;
     ns3:measure 139922 ;
     ns3:region <https://sawa.github.io/resources/CZ0722> .
 
-<https://sawa.github.io/resources/observation-063> a ns1:Observation ;
-    ns1:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
+<https://sawa.github.io/resources/observation-063> a ns2:Observation ;
+    ns2:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
     ns3:county <https://sawa.github.io/resources/40886> ;
     ns3:measure 241184 ;
     ns3:region <https://sawa.github.io/resources/CZ0803> .
 
-<https://sawa.github.io/resources/observation-064> a ns1:Observation ;
-    ns1:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
+<https://sawa.github.io/resources/observation-064> a ns2:Observation ;
+    ns2:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
     ns3:county <https://sawa.github.io/resources/40339> ;
     ns3:measure 69794 ;
     ns3:region <https://sawa.github.io/resources/CZ0316> .
 
-<https://sawa.github.io/resources/observation-065> a ns1:Observation ;
-    ns1:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
+<https://sawa.github.io/resources/observation-065> a ns2:Observation ;
+    ns2:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
     ns3:county <https://sawa.github.io/resources/40789> ;
     ns3:measure 233661 ;
     ns3:region <https://sawa.github.io/resources/CZ0712> .
 
-<https://sawa.github.io/resources/observation-066> a ns1:Observation ;
-    ns1:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
+<https://sawa.github.io/resources/observation-066> a ns2:Observation ;
+    ns2:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
     ns3:county <https://sawa.github.io/resources/40827> ;
     ns3:measure 103753 ;
     ns3:region <https://sawa.github.io/resources/CZ0721> .
 
-<https://sawa.github.io/resources/observation-067> a ns1:Observation ;
-    ns1:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
+<https://sawa.github.io/resources/observation-067> a ns2:Observation ;
+    ns2:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
     ns3:county <https://sawa.github.io/resources/40908> ;
     ns3:measure 173853 ;
     ns3:region <https://sawa.github.io/resources/CZ0805> .
 
-<https://sawa.github.io/resources/observation-068> a ns1:Observation ;
-    ns1:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
+<https://sawa.github.io/resources/observation-068> a ns2:Observation ;
+    ns2:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
     ns3:county <https://sawa.github.io/resources/40185> ;
     ns3:measure 164359 ;
     ns3:region <https://sawa.github.io/resources/CZ0203> .
 
-<https://sawa.github.io/resources/observation-069> a ns1:Observation ;
-    ns1:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
+<https://sawa.github.io/resources/observation-069> a ns2:Observation ;
+    ns2:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
     ns3:county <https://sawa.github.io/resources/40444> ;
     ns3:measure 85452 ;
     ns3:region <https://sawa.github.io/resources/CZ0413> .
 
-<https://sawa.github.io/resources/observation-070> a ns1:Observation ;
-    ns1:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
+<https://sawa.github.io/resources/observation-070> a ns2:Observation ;
+    ns2:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
     ns3:county <https://sawa.github.io/resources/40461> ;
     ns3:measure 121643 ;
     ns3:region <https://sawa.github.io/resources/CZ0422> .
 
-<https://sawa.github.io/resources/observation-071> a ns1:Observation ;
-    ns1:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
+<https://sawa.github.io/resources/observation-071> a ns2:Observation ;
+    ns2:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
     ns3:county <https://sawa.github.io/resources/40495> ;
     ns3:measure 107090 ;
     ns3:region <https://sawa.github.io/resources/CZ0425> .
 
-<https://sawa.github.io/resources/observation-072> a ns1:Observation ;
-    ns1:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
+<https://sawa.github.io/resources/observation-072> a ns2:Observation ;
+    ns2:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
     ns3:county <https://sawa.github.io/resources/40347> ;
     ns3:measure 101333 ;
     ns3:region <https://sawa.github.io/resources/CZ0317> .
 
-<https://sawa.github.io/resources/observation-073> a ns1:Observation ;
-    ns1:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
+<https://sawa.github.io/resources/observation-073> a ns2:Observation ;
+    ns2:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
     ns3:county <https://sawa.github.io/resources/40533> ;
     ns3:measure 90204 ;
     ns3:region <https://sawa.github.io/resources/CZ0512> .
 
-<https://sawa.github.io/resources/observation-074> a ns1:Observation ;
-    ns1:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
+<https://sawa.github.io/resources/observation-074> a ns2:Observation ;
+    ns2:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
     ns3:county <https://sawa.github.io/resources/40410> ;
     ns3:measure 52793 ;
     ns3:region <https://sawa.github.io/resources/CZ0327> .
 
-<https://sawa.github.io/resources/observation-075> a ns1:Observation ;
-    ns1:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
+<https://sawa.github.io/resources/observation-075> a ns2:Observation ;
+    ns2:dataSet <https://sawa.github.io/resources/dataCubeInstance> ;
     ns3:county <https://sawa.github.io/resources/40487> ;
     ns3:measure 85466 ;
     ns3:region <https://sawa.github.io/resources/CZ0424> .
 
-ns3:county a ns1:DimensionProperty,
+ns3:county a ns2:DimensionProperty,
         rdfs:Property ;
     rdfs:label "Okres"@cs,
         "County"@en ;
-    ns1:concept <http://purl.org/linked-data/sdmx/2009/dimension#refArea> ;
+    ns2:concept <http://purl.org/linked-data/sdmx/2009/dimension#refArea> ;
     rdfs:range xsd:string ;
     rdfs:subPropertyOf <http://purl.org/linked-data/sdmx/2009/dimension#refArea> ;
-    ns2:prefLabel "Okres"@cs,
+    ns1:prefLabel "Okres"@cs,
         "County"@en .
 
-ns3:measure a ns1:MeasureProperty,
+ns3:measure a ns2:MeasureProperty,
         rdfs:Property ;
     rdfs:label "StredniHodnota"@cs,
         "Mean"@en ;
-    ns1:concept <http://purl.org/linked-data/sdmx/2009/measure#obsValue> ;
+    ns2:concept <http://purl.org/linked-data/sdmx/2009/measure#obsValue> ;
     rdfs:range xsd:integer ;
     rdfs:subPropertyOf <http://purl.org/linked-data/sdmx/2009/measure#obsValue> .
 
-ns3:region a ns1:DimensionProperty,
+ns3:region a ns2:DimensionProperty,
         rdfs:Property ;
     rdfs:label "Kraj"@cs,
         "Region"@en ;
-    ns1:concept <http://purl.org/linked-data/sdmx/2009/dimension#refArea> ;
+    ns2:concept <http://purl.org/linked-data/sdmx/2009/dimension#refArea> ;
     rdfs:range xsd:string ;
     rdfs:subPropertyOf <http://purl.org/linked-data/sdmx/2009/dimension#refArea> ;
-    ns2:prefLabel "Kraj"@cs,
+    ns1:prefLabel "Kraj"@cs,
         "Region"@en .
 
-ns3:structure a ns1:structure ;
-    ns1:component [ ns1:dimension ns3:county ],
-        [ ns1:measure ns3:measure ],
-        [ ns1:dimension ns3:region ] .
+ns3:structure a ns2:structure ;
+    ns2:component [ ns2:dimension ns3:county ],
+        [ ns2:measure ns3:measure ],
+        [ ns2:dimension ns3:region ] .
 
-<https://sawa.github.io/resources/40169> a ns2:Concept ;
-    ns2:prefLabel "Benešov"@cs,
+<https://sawa.github.io/resources/40169> a ns1:Concept ;
+    ns1:prefLabel "Benešov"@cs,
         "Benešov"@en .
 
-<https://sawa.github.io/resources/40177> a ns2:Concept ;
-    ns2:prefLabel "Beroun"@cs,
+<https://sawa.github.io/resources/40177> a ns1:Concept ;
+    ns1:prefLabel "Beroun"@cs,
         "Beroun"@en .
 
-<https://sawa.github.io/resources/40185> a ns2:Concept ;
-    ns2:prefLabel "Kladno"@cs,
+<https://sawa.github.io/resources/40185> a ns1:Concept ;
+    ns1:prefLabel "Kladno"@cs,
         "Kladno"@en .
 
-<https://sawa.github.io/resources/40193> a ns2:Concept ;
-    ns2:prefLabel "Kolín"@cs,
+<https://sawa.github.io/resources/40193> a ns1:Concept ;
+    ns1:prefLabel "Kolín"@cs,
         "Kolín"@en .
 
-<https://sawa.github.io/resources/40207> a ns2:Concept ;
-    ns2:prefLabel "Kutná Hora"@cs,
+<https://sawa.github.io/resources/40207> a ns1:Concept ;
+    ns1:prefLabel "Kutná Hora"@cs,
         "Kutná Hora"@en .
 
-<https://sawa.github.io/resources/40215> a ns2:Concept ;
-    ns2:prefLabel "Mělník"@cs,
+<https://sawa.github.io/resources/40215> a ns1:Concept ;
+    ns1:prefLabel "Mělník"@cs,
         "Mělník"@en .
 
-<https://sawa.github.io/resources/40223> a ns2:Concept ;
-    ns2:prefLabel "Mladá Boleslav"@cs,
+<https://sawa.github.io/resources/40223> a ns1:Concept ;
+    ns1:prefLabel "Mladá Boleslav"@cs,
         "Mladá Boleslav"@en .
 
-<https://sawa.github.io/resources/40231> a ns2:Concept ;
-    ns2:prefLabel "Nymburk"@cs,
+<https://sawa.github.io/resources/40231> a ns1:Concept ;
+    ns1:prefLabel "Nymburk"@cs,
         "Nymburk"@en .
 
-<https://sawa.github.io/resources/40240> a ns2:Concept ;
-    ns2:prefLabel "Praha-východ"@cs,
+<https://sawa.github.io/resources/40240> a ns1:Concept ;
+    ns1:prefLabel "Praha-východ"@cs,
         "Praha-východ"@en .
 
-<https://sawa.github.io/resources/40258> a ns2:Concept ;
-    ns2:prefLabel "Praha-západ"@cs,
+<https://sawa.github.io/resources/40258> a ns1:Concept ;
+    ns1:prefLabel "Praha-západ"@cs,
         "Praha-západ"@en .
 
-<https://sawa.github.io/resources/40266> a ns2:Concept ;
-    ns2:prefLabel "Příbram"@cs,
+<https://sawa.github.io/resources/40266> a ns1:Concept ;
+    ns1:prefLabel "Příbram"@cs,
         "Příbram"@en .
 
-<https://sawa.github.io/resources/40274> a ns2:Concept ;
-    ns2:prefLabel "Rakovník"@cs,
+<https://sawa.github.io/resources/40274> a ns1:Concept ;
+    ns1:prefLabel "Rakovník"@cs,
         "Rakovník"@en .
 
-<https://sawa.github.io/resources/40282> a ns2:Concept ;
-    ns2:prefLabel "České Budějovice"@cs,
+<https://sawa.github.io/resources/40282> a ns1:Concept ;
+    ns1:prefLabel "České Budějovice"@cs,
         "České Budějovice"@en .
 
-<https://sawa.github.io/resources/40291> a ns2:Concept ;
-    ns2:prefLabel "Český Krumlov"@cs,
+<https://sawa.github.io/resources/40291> a ns1:Concept ;
+    ns1:prefLabel "Český Krumlov"@cs,
         "Český Krumlov"@en .
 
-<https://sawa.github.io/resources/40304> a ns2:Concept ;
-    ns2:prefLabel "Jindřichův Hradec"@cs,
+<https://sawa.github.io/resources/40304> a ns1:Concept ;
+    ns1:prefLabel "Jindřichův Hradec"@cs,
         "Jindřichův Hradec"@en .
 
-<https://sawa.github.io/resources/40312> a ns2:Concept ;
-    ns2:prefLabel "Písek"@cs,
+<https://sawa.github.io/resources/40312> a ns1:Concept ;
+    ns1:prefLabel "Písek"@cs,
         "Písek"@en .
 
-<https://sawa.github.io/resources/40321> a ns2:Concept ;
-    ns2:prefLabel "Prachatice"@cs,
+<https://sawa.github.io/resources/40321> a ns1:Concept ;
+    ns1:prefLabel "Prachatice"@cs,
         "Prachatice"@en .
 
-<https://sawa.github.io/resources/40339> a ns2:Concept ;
-    ns2:prefLabel "Strakonice"@cs,
+<https://sawa.github.io/resources/40339> a ns1:Concept ;
+    ns1:prefLabel "Strakonice"@cs,
         "Strakonice"@en .
 
-<https://sawa.github.io/resources/40347> a ns2:Concept ;
-    ns2:prefLabel "Tábor"@cs,
+<https://sawa.github.io/resources/40347> a ns1:Concept ;
+    ns1:prefLabel "Tábor"@cs,
         "Tábor"@en .
 
-<https://sawa.github.io/resources/40355> a ns2:Concept ;
-    ns2:prefLabel "Domažlice"@cs,
+<https://sawa.github.io/resources/40355> a ns1:Concept ;
+    ns1:prefLabel "Domažlice"@cs,
         "Domažlice"@en .
 
-<https://sawa.github.io/resources/40363> a ns2:Concept ;
-    ns2:prefLabel "Klatovy"@cs,
+<https://sawa.github.io/resources/40363> a ns1:Concept ;
+    ns1:prefLabel "Klatovy"@cs,
         "Klatovy"@en .
 
-<https://sawa.github.io/resources/40371> a ns2:Concept ;
-    ns2:prefLabel "Plzeň-město"@cs,
+<https://sawa.github.io/resources/40371> a ns1:Concept ;
+    ns1:prefLabel "Plzeň-město"@cs,
         "Plzeň-město"@en .
 
-<https://sawa.github.io/resources/40380> a ns2:Concept ;
-    ns2:prefLabel "Plzeň-jih"@cs,
+<https://sawa.github.io/resources/40380> a ns1:Concept ;
+    ns1:prefLabel "Plzeň-jih"@cs,
         "Plzeň-jih"@en .
 
-<https://sawa.github.io/resources/40398> a ns2:Concept ;
-    ns2:prefLabel "Plzeň-sever"@cs,
+<https://sawa.github.io/resources/40398> a ns1:Concept ;
+    ns1:prefLabel "Plzeň-sever"@cs,
         "Plzeň-sever"@en .
 
-<https://sawa.github.io/resources/40401> a ns2:Concept ;
-    ns2:prefLabel "Rokycany"@cs,
+<https://sawa.github.io/resources/40401> a ns1:Concept ;
+    ns1:prefLabel "Rokycany"@cs,
         "Rokycany"@en .
 
-<https://sawa.github.io/resources/40410> a ns2:Concept ;
-    ns2:prefLabel "Tachov"@cs,
+<https://sawa.github.io/resources/40410> a ns1:Concept ;
+    ns1:prefLabel "Tachov"@cs,
         "Tachov"@en .
 
-<https://sawa.github.io/resources/40428> a ns2:Concept ;
-    ns2:prefLabel "Cheb"@cs,
+<https://sawa.github.io/resources/40428> a ns1:Concept ;
+    ns1:prefLabel "Cheb"@cs,
         "Cheb"@en .
 
-<https://sawa.github.io/resources/40436> a ns2:Concept ;
-    ns2:prefLabel "Karlovy Vary"@cs,
+<https://sawa.github.io/resources/40436> a ns1:Concept ;
+    ns1:prefLabel "Karlovy Vary"@cs,
         "Karlovy Vary"@en .
 
-<https://sawa.github.io/resources/40444> a ns2:Concept ;
-    ns2:prefLabel "Sokolov"@cs,
+<https://sawa.github.io/resources/40444> a ns1:Concept ;
+    ns1:prefLabel "Sokolov"@cs,
         "Sokolov"@en .
 
-<https://sawa.github.io/resources/40452> a ns2:Concept ;
-    ns2:prefLabel "Děčín"@cs,
+<https://sawa.github.io/resources/40452> a ns1:Concept ;
+    ns1:prefLabel "Děčín"@cs,
         "Děčín"@en .
 
-<https://sawa.github.io/resources/40461> a ns2:Concept ;
-    ns2:prefLabel "Chomutov"@cs,
+<https://sawa.github.io/resources/40461> a ns1:Concept ;
+    ns1:prefLabel "Chomutov"@cs,
         "Chomutov"@en .
 
-<https://sawa.github.io/resources/40479> a ns2:Concept ;
-    ns2:prefLabel "Litoměřice"@cs,
+<https://sawa.github.io/resources/40479> a ns1:Concept ;
+    ns1:prefLabel "Litoměřice"@cs,
         "Litoměřice"@en .
 
-<https://sawa.github.io/resources/40487> a ns2:Concept ;
-    ns2:prefLabel "Louny"@cs,
+<https://sawa.github.io/resources/40487> a ns1:Concept ;
+    ns1:prefLabel "Louny"@cs,
         "Louny"@en .
 
-<https://sawa.github.io/resources/40495> a ns2:Concept ;
-    ns2:prefLabel "Most"@cs,
+<https://sawa.github.io/resources/40495> a ns1:Concept ;
+    ns1:prefLabel "Most"@cs,
         "Most"@en .
 
-<https://sawa.github.io/resources/40509> a ns2:Concept ;
-    ns2:prefLabel "Teplice"@cs,
+<https://sawa.github.io/resources/40509> a ns1:Concept ;
+    ns1:prefLabel "Teplice"@cs,
         "Teplice"@en .
 
-<https://sawa.github.io/resources/40517> a ns2:Concept ;
-    ns2:prefLabel "Ústí nad Labem"@cs,
+<https://sawa.github.io/resources/40517> a ns1:Concept ;
+    ns1:prefLabel "Ústí nad Labem"@cs,
         "Ústí nad Labem"@en .
 
-<https://sawa.github.io/resources/40525> a ns2:Concept ;
-    ns2:prefLabel "Česká Lípa"@cs,
+<https://sawa.github.io/resources/40525> a ns1:Concept ;
+    ns1:prefLabel "Česká Lípa"@cs,
         "Česká Lípa"@en .
 
-<https://sawa.github.io/resources/40533> a ns2:Concept ;
-    ns2:prefLabel "Jablonec nad Nisou"@cs,
+<https://sawa.github.io/resources/40533> a ns1:Concept ;
+    ns1:prefLabel "Jablonec nad Nisou"@cs,
         "Jablonec nad Nisou"@en .
 
-<https://sawa.github.io/resources/40541> a ns2:Concept ;
-    ns2:prefLabel "Liberec"@cs,
+<https://sawa.github.io/resources/40541> a ns1:Concept ;
+    ns1:prefLabel "Liberec"@cs,
         "Liberec"@en .
 
-<https://sawa.github.io/resources/40550> a ns2:Concept ;
-    ns2:prefLabel "Semily"@cs,
+<https://sawa.github.io/resources/40550> a ns1:Concept ;
+    ns1:prefLabel "Semily"@cs,
         "Semily"@en .
 
-<https://sawa.github.io/resources/40568> a ns2:Concept ;
-    ns2:prefLabel "Hradec Králové"@cs,
+<https://sawa.github.io/resources/40568> a ns1:Concept ;
+    ns1:prefLabel "Hradec Králové"@cs,
         "Hradec Králové"@en .
 
-<https://sawa.github.io/resources/40576> a ns2:Concept ;
-    ns2:prefLabel "Jičín"@cs,
+<https://sawa.github.io/resources/40576> a ns1:Concept ;
+    ns1:prefLabel "Jičín"@cs,
         "Jičín"@en .
 
-<https://sawa.github.io/resources/40584> a ns2:Concept ;
-    ns2:prefLabel "Náchod"@cs,
+<https://sawa.github.io/resources/40584> a ns1:Concept ;
+    ns1:prefLabel "Náchod"@cs,
         "Náchod"@en .
 
-<https://sawa.github.io/resources/40592> a ns2:Concept ;
-    ns2:prefLabel "Rychnov nad Kněžnou"@cs,
+<https://sawa.github.io/resources/40592> a ns1:Concept ;
+    ns1:prefLabel "Rychnov nad Kněžnou"@cs,
         "Rychnov nad Kněžnou"@en .
 
-<https://sawa.github.io/resources/40606> a ns2:Concept ;
-    ns2:prefLabel "Trutnov"@cs,
+<https://sawa.github.io/resources/40606> a ns1:Concept ;
+    ns1:prefLabel "Trutnov"@cs,
         "Trutnov"@en .
 
-<https://sawa.github.io/resources/40614> a ns2:Concept ;
-    ns2:prefLabel "Chrudim"@cs,
+<https://sawa.github.io/resources/40614> a ns1:Concept ;
+    ns1:prefLabel "Chrudim"@cs,
         "Chrudim"@en .
 
-<https://sawa.github.io/resources/40622> a ns2:Concept ;
-    ns2:prefLabel "Pardubice"@cs,
+<https://sawa.github.io/resources/40622> a ns1:Concept ;
+    ns1:prefLabel "Pardubice"@cs,
         "Pardubice"@en .
 
-<https://sawa.github.io/resources/40631> a ns2:Concept ;
-    ns2:prefLabel "Svitavy"@cs,
+<https://sawa.github.io/resources/40631> a ns1:Concept ;
+    ns1:prefLabel "Svitavy"@cs,
         "Svitavy"@en .
 
-<https://sawa.github.io/resources/40649> a ns2:Concept ;
-    ns2:prefLabel "Ústí nad Orlicí"@cs,
+<https://sawa.github.io/resources/40649> a ns1:Concept ;
+    ns1:prefLabel "Ústí nad Orlicí"@cs,
         "Ústí nad Orlicí"@en .
 
-<https://sawa.github.io/resources/40657> a ns2:Concept ;
-    ns2:prefLabel "Havlíčkův Brod"@cs,
+<https://sawa.github.io/resources/40657> a ns1:Concept ;
+    ns1:prefLabel "Havlíčkův Brod"@cs,
         "Havlíčkův Brod"@en .
 
-<https://sawa.github.io/resources/40665> a ns2:Concept ;
-    ns2:prefLabel "Jihlava"@cs,
+<https://sawa.github.io/resources/40665> a ns1:Concept ;
+    ns1:prefLabel "Jihlava"@cs,
         "Jihlava"@en .
 
-<https://sawa.github.io/resources/40673> a ns2:Concept ;
-    ns2:prefLabel "Pelhřimov"@cs,
+<https://sawa.github.io/resources/40673> a ns1:Concept ;
+    ns1:prefLabel "Pelhřimov"@cs,
         "Pelhřimov"@en .
 
-<https://sawa.github.io/resources/40681> a ns2:Concept ;
-    ns2:prefLabel "Třebíč"@cs,
+<https://sawa.github.io/resources/40681> a ns1:Concept ;
+    ns1:prefLabel "Třebíč"@cs,
         "Třebíč"@en .
 
-<https://sawa.github.io/resources/40690> a ns2:Concept ;
-    ns2:prefLabel "Žďár nad Sázavou"@cs,
+<https://sawa.github.io/resources/40690> a ns1:Concept ;
+    ns1:prefLabel "Žďár nad Sázavou"@cs,
         "Žďár nad Sázavou"@en .
 
-<https://sawa.github.io/resources/40703> a ns2:Concept ;
-    ns2:prefLabel "Blansko"@cs,
+<https://sawa.github.io/resources/40703> a ns1:Concept ;
+    ns1:prefLabel "Blansko"@cs,
         "Blansko"@en .
 
-<https://sawa.github.io/resources/40711> a ns2:Concept ;
-    ns2:prefLabel "Brno-město"@cs,
+<https://sawa.github.io/resources/40711> a ns1:Concept ;
+    ns1:prefLabel "Brno-město"@cs,
         "Brno-město"@en .
 
-<https://sawa.github.io/resources/40720> a ns2:Concept ;
-    ns2:prefLabel "Brno-venkov"@cs,
+<https://sawa.github.io/resources/40720> a ns1:Concept ;
+    ns1:prefLabel "Brno-venkov"@cs,
         "Brno-venkov"@en .
 
-<https://sawa.github.io/resources/40738> a ns2:Concept ;
-    ns2:prefLabel "Břeclav"@cs,
+<https://sawa.github.io/resources/40738> a ns1:Concept ;
+    ns1:prefLabel "Břeclav"@cs,
         "Břeclav"@en .
 
-<https://sawa.github.io/resources/40746> a ns2:Concept ;
-    ns2:prefLabel "Hodonín"@cs,
+<https://sawa.github.io/resources/40746> a ns1:Concept ;
+    ns1:prefLabel "Hodonín"@cs,
         "Hodonín"@en .
 
-<https://sawa.github.io/resources/40754> a ns2:Concept ;
-    ns2:prefLabel "Vyškov"@cs,
+<https://sawa.github.io/resources/40754> a ns1:Concept ;
+    ns1:prefLabel "Vyškov"@cs,
         "Vyškov"@en .
 
-<https://sawa.github.io/resources/40762> a ns2:Concept ;
-    ns2:prefLabel "Znojmo"@cs,
+<https://sawa.github.io/resources/40762> a ns1:Concept ;
+    ns1:prefLabel "Znojmo"@cs,
         "Znojmo"@en .
 
-<https://sawa.github.io/resources/40771> a ns2:Concept ;
-    ns2:prefLabel "Jeseník"@cs,
+<https://sawa.github.io/resources/40771> a ns1:Concept ;
+    ns1:prefLabel "Jeseník"@cs,
         "Jeseník"@en .
 
-<https://sawa.github.io/resources/40789> a ns2:Concept ;
-    ns2:prefLabel "Olomouc"@cs,
+<https://sawa.github.io/resources/40789> a ns1:Concept ;
+    ns1:prefLabel "Olomouc"@cs,
         "Olomouc"@en .
 
-<https://sawa.github.io/resources/40797> a ns2:Concept ;
-    ns2:prefLabel "Prostějov"@cs,
+<https://sawa.github.io/resources/40797> a ns1:Concept ;
+    ns1:prefLabel "Prostějov"@cs,
         "Prostějov"@en .
 
-<https://sawa.github.io/resources/40801> a ns2:Concept ;
-    ns2:prefLabel "Přerov"@cs,
+<https://sawa.github.io/resources/40801> a ns1:Concept ;
+    ns1:prefLabel "Přerov"@cs,
         "Přerov"@en .
 
-<https://sawa.github.io/resources/40819> a ns2:Concept ;
-    ns2:prefLabel "Šumperk"@cs,
+<https://sawa.github.io/resources/40819> a ns1:Concept ;
+    ns1:prefLabel "Šumperk"@cs,
         "Šumperk"@en .
 
-<https://sawa.github.io/resources/40827> a ns2:Concept ;
-    ns2:prefLabel "Kroměříž"@cs,
+<https://sawa.github.io/resources/40827> a ns1:Concept ;
+    ns1:prefLabel "Kroměříž"@cs,
         "Kroměříž"@en .
 
-<https://sawa.github.io/resources/40835> a ns2:Concept ;
-    ns2:prefLabel "Uherské Hradiště"@cs,
+<https://sawa.github.io/resources/40835> a ns1:Concept ;
+    ns1:prefLabel "Uherské Hradiště"@cs,
         "Uherské Hradiště"@en .
 
-<https://sawa.github.io/resources/40843> a ns2:Concept ;
-    ns2:prefLabel "Vsetín"@cs,
+<https://sawa.github.io/resources/40843> a ns1:Concept ;
+    ns1:prefLabel "Vsetín"@cs,
         "Vsetín"@en .
 
-<https://sawa.github.io/resources/40851> a ns2:Concept ;
-    ns2:prefLabel "Zlín"@cs,
+<https://sawa.github.io/resources/40851> a ns1:Concept ;
+    ns1:prefLabel "Zlín"@cs,
         "Zlín"@en .
 
-<https://sawa.github.io/resources/40860> a ns2:Concept ;
-    ns2:prefLabel "Bruntál"@cs,
+<https://sawa.github.io/resources/40860> a ns1:Concept ;
+    ns1:prefLabel "Bruntál"@cs,
         "Bruntál"@en .
 
-<https://sawa.github.io/resources/40878> a ns2:Concept ;
-    ns2:prefLabel "Frýdek-Místek"@cs,
+<https://sawa.github.io/resources/40878> a ns1:Concept ;
+    ns1:prefLabel "Frýdek-Místek"@cs,
         "Frýdek-Místek"@en .
 
-<https://sawa.github.io/resources/40886> a ns2:Concept ;
-    ns2:prefLabel "Karviná"@cs,
+<https://sawa.github.io/resources/40886> a ns1:Concept ;
+    ns1:prefLabel "Karviná"@cs,
         "Karviná"@en .
 
-<https://sawa.github.io/resources/40894> a ns2:Concept ;
-    ns2:prefLabel "Nový Jičín"@cs,
+<https://sawa.github.io/resources/40894> a ns1:Concept ;
+    ns1:prefLabel "Nový Jičín"@cs,
         "Nový Jičín"@en .
 
-<https://sawa.github.io/resources/40908> a ns2:Concept ;
-    ns2:prefLabel "Opava"@cs,
+<https://sawa.github.io/resources/40908> a ns1:Concept ;
+    ns1:prefLabel "Opava"@cs,
         "Opava"@en .
 
-<https://sawa.github.io/resources/40916> a ns2:Concept ;
-    ns2:prefLabel "Ostrava-město"@cs,
+<https://sawa.github.io/resources/40916> a ns1:Concept ;
+    ns1:prefLabel "Ostrava-město"@cs,
         "Ostrava-město"@en .
 
-<https://sawa.github.io/resources/CZ0201> a ns2:Concept ;
-    ns2:prefLabel "CZ0201"@cs,
+<https://sawa.github.io/resources/CZ0201> a ns1:Concept ;
+    ns1:prefLabel "CZ0201"@cs,
         "CZ0201"@en .
 
-<https://sawa.github.io/resources/CZ0202> a ns2:Concept ;
-    ns2:prefLabel "CZ0202"@cs,
+<https://sawa.github.io/resources/CZ0202> a ns1:Concept ;
+    ns1:prefLabel "CZ0202"@cs,
         "CZ0202"@en .
 
-<https://sawa.github.io/resources/CZ0203> a ns2:Concept ;
-    ns2:prefLabel "CZ0203"@cs,
+<https://sawa.github.io/resources/CZ0203> a ns1:Concept ;
+    ns1:prefLabel "CZ0203"@cs,
         "CZ0203"@en .
 
-<https://sawa.github.io/resources/CZ0204> a ns2:Concept ;
-    ns2:prefLabel "CZ0204"@cs,
+<https://sawa.github.io/resources/CZ0204> a ns1:Concept ;
+    ns1:prefLabel "CZ0204"@cs,
         "CZ0204"@en .
 
-<https://sawa.github.io/resources/CZ0205> a ns2:Concept ;
-    ns2:prefLabel "CZ0205"@cs,
+<https://sawa.github.io/resources/CZ0205> a ns1:Concept ;
+    ns1:prefLabel "CZ0205"@cs,
         "CZ0205"@en .
 
-<https://sawa.github.io/resources/CZ0206> a ns2:Concept ;
-    ns2:prefLabel "CZ0206"@cs,
+<https://sawa.github.io/resources/CZ0206> a ns1:Concept ;
+    ns1:prefLabel "CZ0206"@cs,
         "CZ0206"@en .
 
-<https://sawa.github.io/resources/CZ0207> a ns2:Concept ;
-    ns2:prefLabel "CZ0207"@cs,
+<https://sawa.github.io/resources/CZ0207> a ns1:Concept ;
+    ns1:prefLabel "CZ0207"@cs,
         "CZ0207"@en .
 
-<https://sawa.github.io/resources/CZ0208> a ns2:Concept ;
-    ns2:prefLabel "CZ0208"@cs,
+<https://sawa.github.io/resources/CZ0208> a ns1:Concept ;
+    ns1:prefLabel "CZ0208"@cs,
         "CZ0208"@en .
 
-<https://sawa.github.io/resources/CZ0209> a ns2:Concept ;
-    ns2:prefLabel "CZ0209"@cs,
+<https://sawa.github.io/resources/CZ0209> a ns1:Concept ;
+    ns1:prefLabel "CZ0209"@cs,
         "CZ0209"@en .
 
-<https://sawa.github.io/resources/CZ020A> a ns2:Concept ;
-    ns2:prefLabel "CZ020A"@cs,
+<https://sawa.github.io/resources/CZ020A> a ns1:Concept ;
+    ns1:prefLabel "CZ020A"@cs,
         "CZ020A"@en .
 
-<https://sawa.github.io/resources/CZ020B> a ns2:Concept ;
-    ns2:prefLabel "CZ020B"@cs,
+<https://sawa.github.io/resources/CZ020B> a ns1:Concept ;
+    ns1:prefLabel "CZ020B"@cs,
         "CZ020B"@en .
 
-<https://sawa.github.io/resources/CZ020C> a ns2:Concept ;
-    ns2:prefLabel "CZ020C"@cs,
+<https://sawa.github.io/resources/CZ020C> a ns1:Concept ;
+    ns1:prefLabel "CZ020C"@cs,
         "CZ020C"@en .
 
-<https://sawa.github.io/resources/CZ0311> a ns2:Concept ;
-    ns2:prefLabel "CZ0311"@cs,
+<https://sawa.github.io/resources/CZ0311> a ns1:Concept ;
+    ns1:prefLabel "CZ0311"@cs,
         "CZ0311"@en .
 
-<https://sawa.github.io/resources/CZ0312> a ns2:Concept ;
-    ns2:prefLabel "CZ0312"@cs,
+<https://sawa.github.io/resources/CZ0312> a ns1:Concept ;
+    ns1:prefLabel "CZ0312"@cs,
         "CZ0312"@en .
 
-<https://sawa.github.io/resources/CZ0313> a ns2:Concept ;
-    ns2:prefLabel "CZ0313"@cs,
+<https://sawa.github.io/resources/CZ0313> a ns1:Concept ;
+    ns1:prefLabel "CZ0313"@cs,
         "CZ0313"@en .
 
-<https://sawa.github.io/resources/CZ0314> a ns2:Concept ;
-    ns2:prefLabel "CZ0314"@cs,
+<https://sawa.github.io/resources/CZ0314> a ns1:Concept ;
+    ns1:prefLabel "CZ0314"@cs,
         "CZ0314"@en .
 
-<https://sawa.github.io/resources/CZ0315> a ns2:Concept ;
-    ns2:prefLabel "CZ0315"@cs,
+<https://sawa.github.io/resources/CZ0315> a ns1:Concept ;
+    ns1:prefLabel "CZ0315"@cs,
         "CZ0315"@en .
 
-<https://sawa.github.io/resources/CZ0316> a ns2:Concept ;
-    ns2:prefLabel "CZ0316"@cs,
+<https://sawa.github.io/resources/CZ0316> a ns1:Concept ;
+    ns1:prefLabel "CZ0316"@cs,
         "CZ0316"@en .
 
-<https://sawa.github.io/resources/CZ0317> a ns2:Concept ;
-    ns2:prefLabel "CZ0317"@cs,
+<https://sawa.github.io/resources/CZ0317> a ns1:Concept ;
+    ns1:prefLabel "CZ0317"@cs,
         "CZ0317"@en .
 
-<https://sawa.github.io/resources/CZ0321> a ns2:Concept ;
-    ns2:prefLabel "CZ0321"@cs,
+<https://sawa.github.io/resources/CZ0321> a ns1:Concept ;
+    ns1:prefLabel "CZ0321"@cs,
         "CZ0321"@en .
 
-<https://sawa.github.io/resources/CZ0322> a ns2:Concept ;
-    ns2:prefLabel "CZ0322"@cs,
+<https://sawa.github.io/resources/CZ0322> a ns1:Concept ;
+    ns1:prefLabel "CZ0322"@cs,
         "CZ0322"@en .
 
-<https://sawa.github.io/resources/CZ0323> a ns2:Concept ;
-    ns2:prefLabel "CZ0323"@cs,
+<https://sawa.github.io/resources/CZ0323> a ns1:Concept ;
+    ns1:prefLabel "CZ0323"@cs,
         "CZ0323"@en .
 
-<https://sawa.github.io/resources/CZ0324> a ns2:Concept ;
-    ns2:prefLabel "CZ0324"@cs,
+<https://sawa.github.io/resources/CZ0324> a ns1:Concept ;
+    ns1:prefLabel "CZ0324"@cs,
         "CZ0324"@en .
 
-<https://sawa.github.io/resources/CZ0325> a ns2:Concept ;
-    ns2:prefLabel "CZ0325"@cs,
+<https://sawa.github.io/resources/CZ0325> a ns1:Concept ;
+    ns1:prefLabel "CZ0325"@cs,
         "CZ0325"@en .
 
-<https://sawa.github.io/resources/CZ0326> a ns2:Concept ;
-    ns2:prefLabel "CZ0326"@cs,
+<https://sawa.github.io/resources/CZ0326> a ns1:Concept ;
+    ns1:prefLabel "CZ0326"@cs,
         "CZ0326"@en .
 
-<https://sawa.github.io/resources/CZ0327> a ns2:Concept ;
-    ns2:prefLabel "CZ0327"@cs,
+<https://sawa.github.io/resources/CZ0327> a ns1:Concept ;
+    ns1:prefLabel "CZ0327"@cs,
         "CZ0327"@en .
 
-<https://sawa.github.io/resources/CZ0411> a ns2:Concept ;
-    ns2:prefLabel "CZ0411"@cs,
+<https://sawa.github.io/resources/CZ0411> a ns1:Concept ;
+    ns1:prefLabel "CZ0411"@cs,
         "CZ0411"@en .
 
-<https://sawa.github.io/resources/CZ0412> a ns2:Concept ;
-    ns2:prefLabel "CZ0412"@cs,
+<https://sawa.github.io/resources/CZ0412> a ns1:Concept ;
+    ns1:prefLabel "CZ0412"@cs,
         "CZ0412"@en .
 
-<https://sawa.github.io/resources/CZ0413> a ns2:Concept ;
-    ns2:prefLabel "CZ0413"@cs,
+<https://sawa.github.io/resources/CZ0413> a ns1:Concept ;
+    ns1:prefLabel "CZ0413"@cs,
         "CZ0413"@en .
 
-<https://sawa.github.io/resources/CZ0421> a ns2:Concept ;
-    ns2:prefLabel "CZ0421"@cs,
+<https://sawa.github.io/resources/CZ0421> a ns1:Concept ;
+    ns1:prefLabel "CZ0421"@cs,
         "CZ0421"@en .
 
-<https://sawa.github.io/resources/CZ0422> a ns2:Concept ;
-    ns2:prefLabel "CZ0422"@cs,
+<https://sawa.github.io/resources/CZ0422> a ns1:Concept ;
+    ns1:prefLabel "CZ0422"@cs,
         "CZ0422"@en .
 
-<https://sawa.github.io/resources/CZ0423> a ns2:Concept ;
-    ns2:prefLabel "CZ0423"@cs,
+<https://sawa.github.io/resources/CZ0423> a ns1:Concept ;
+    ns1:prefLabel "CZ0423"@cs,
         "CZ0423"@en .
 
-<https://sawa.github.io/resources/CZ0424> a ns2:Concept ;
-    ns2:prefLabel "CZ0424"@cs,
+<https://sawa.github.io/resources/CZ0424> a ns1:Concept ;
+    ns1:prefLabel "CZ0424"@cs,
         "CZ0424"@en .
 
-<https://sawa.github.io/resources/CZ0425> a ns2:Concept ;
-    ns2:prefLabel "CZ0425"@cs,
+<https://sawa.github.io/resources/CZ0425> a ns1:Concept ;
+    ns1:prefLabel "CZ0425"@cs,
         "CZ0425"@en .
 
-<https://sawa.github.io/resources/CZ0426> a ns2:Concept ;
-    ns2:prefLabel "CZ0426"@cs,
+<https://sawa.github.io/resources/CZ0426> a ns1:Concept ;
+    ns1:prefLabel "CZ0426"@cs,
         "CZ0426"@en .
 
-<https://sawa.github.io/resources/CZ0427> a ns2:Concept ;
-    ns2:prefLabel "CZ0427"@cs,
+<https://sawa.github.io/resources/CZ0427> a ns1:Concept ;
+    ns1:prefLabel "CZ0427"@cs,
         "CZ0427"@en .
 
-<https://sawa.github.io/resources/CZ0511> a ns2:Concept ;
-    ns2:prefLabel "CZ0511"@cs,
+<https://sawa.github.io/resources/CZ0511> a ns1:Concept ;
+    ns1:prefLabel "CZ0511"@cs,
         "CZ0511"@en .
 
-<https://sawa.github.io/resources/CZ0512> a ns2:Concept ;
-    ns2:prefLabel "CZ0512"@cs,
+<https://sawa.github.io/resources/CZ0512> a ns1:Concept ;
+    ns1:prefLabel "CZ0512"@cs,
         "CZ0512"@en .
 
-<https://sawa.github.io/resources/CZ0513> a ns2:Concept ;
-    ns2:prefLabel "CZ0513"@cs,
+<https://sawa.github.io/resources/CZ0513> a ns1:Concept ;
+    ns1:prefLabel "CZ0513"@cs,
         "CZ0513"@en .
 
-<https://sawa.github.io/resources/CZ0514> a ns2:Concept ;
-    ns2:prefLabel "CZ0514"@cs,
+<https://sawa.github.io/resources/CZ0514> a ns1:Concept ;
+    ns1:prefLabel "CZ0514"@cs,
         "CZ0514"@en .
 
-<https://sawa.github.io/resources/CZ0521> a ns2:Concept ;
-    ns2:prefLabel "CZ0521"@cs,
+<https://sawa.github.io/resources/CZ0521> a ns1:Concept ;
+    ns1:prefLabel "CZ0521"@cs,
         "CZ0521"@en .
 
-<https://sawa.github.io/resources/CZ0522> a ns2:Concept ;
-    ns2:prefLabel "CZ0522"@cs,
+<https://sawa.github.io/resources/CZ0522> a ns1:Concept ;
+    ns1:prefLabel "CZ0522"@cs,
         "CZ0522"@en .
 
-<https://sawa.github.io/resources/CZ0523> a ns2:Concept ;
-    ns2:prefLabel "CZ0523"@cs,
+<https://sawa.github.io/resources/CZ0523> a ns1:Concept ;
+    ns1:prefLabel "CZ0523"@cs,
         "CZ0523"@en .
 
-<https://sawa.github.io/resources/CZ0524> a ns2:Concept ;
-    ns2:prefLabel "CZ0524"@cs,
+<https://sawa.github.io/resources/CZ0524> a ns1:Concept ;
+    ns1:prefLabel "CZ0524"@cs,
         "CZ0524"@en .
 
-<https://sawa.github.io/resources/CZ0525> a ns2:Concept ;
-    ns2:prefLabel "CZ0525"@cs,
+<https://sawa.github.io/resources/CZ0525> a ns1:Concept ;
+    ns1:prefLabel "CZ0525"@cs,
         "CZ0525"@en .
 
-<https://sawa.github.io/resources/CZ0531> a ns2:Concept ;
-    ns2:prefLabel "CZ0531"@cs,
+<https://sawa.github.io/resources/CZ0531> a ns1:Concept ;
+    ns1:prefLabel "CZ0531"@cs,
         "CZ0531"@en .
 
-<https://sawa.github.io/resources/CZ0532> a ns2:Concept ;
-    ns2:prefLabel "CZ0532"@cs,
+<https://sawa.github.io/resources/CZ0532> a ns1:Concept ;
+    ns1:prefLabel "CZ0532"@cs,
         "CZ0532"@en .
 
-<https://sawa.github.io/resources/CZ0533> a ns2:Concept ;
-    ns2:prefLabel "CZ0533"@cs,
+<https://sawa.github.io/resources/CZ0533> a ns1:Concept ;
+    ns1:prefLabel "CZ0533"@cs,
         "CZ0533"@en .
 
-<https://sawa.github.io/resources/CZ0534> a ns2:Concept ;
-    ns2:prefLabel "CZ0534"@cs,
+<https://sawa.github.io/resources/CZ0534> a ns1:Concept ;
+    ns1:prefLabel "CZ0534"@cs,
         "CZ0534"@en .
 
-<https://sawa.github.io/resources/CZ0631> a ns2:Concept ;
-    ns2:prefLabel "CZ0631"@cs,
+<https://sawa.github.io/resources/CZ0631> a ns1:Concept ;
+    ns1:prefLabel "CZ0631"@cs,
         "CZ0631"@en .
 
-<https://sawa.github.io/resources/CZ0632> a ns2:Concept ;
-    ns2:prefLabel "CZ0632"@cs,
+<https://sawa.github.io/resources/CZ0632> a ns1:Concept ;
+    ns1:prefLabel "CZ0632"@cs,
         "CZ0632"@en .
 
-<https://sawa.github.io/resources/CZ0633> a ns2:Concept ;
-    ns2:prefLabel "CZ0633"@cs,
+<https://sawa.github.io/resources/CZ0633> a ns1:Concept ;
+    ns1:prefLabel "CZ0633"@cs,
         "CZ0633"@en .
 
-<https://sawa.github.io/resources/CZ0634> a ns2:Concept ;
-    ns2:prefLabel "CZ0634"@cs,
+<https://sawa.github.io/resources/CZ0634> a ns1:Concept ;
+    ns1:prefLabel "CZ0634"@cs,
         "CZ0634"@en .
 
-<https://sawa.github.io/resources/CZ0635> a ns2:Concept ;
-    ns2:prefLabel "CZ0635"@cs,
+<https://sawa.github.io/resources/CZ0635> a ns1:Concept ;
+    ns1:prefLabel "CZ0635"@cs,
         "CZ0635"@en .
 
-<https://sawa.github.io/resources/CZ0641> a ns2:Concept ;
-    ns2:prefLabel "CZ0641"@cs,
+<https://sawa.github.io/resources/CZ0641> a ns1:Concept ;
+    ns1:prefLabel "CZ0641"@cs,
         "CZ0641"@en .
 
-<https://sawa.github.io/resources/CZ0642> a ns2:Concept ;
-    ns2:prefLabel "CZ0642"@cs,
+<https://sawa.github.io/resources/CZ0642> a ns1:Concept ;
+    ns1:prefLabel "CZ0642"@cs,
         "CZ0642"@en .
 
-<https://sawa.github.io/resources/CZ0643> a ns2:Concept ;
-    ns2:prefLabel "CZ0643"@cs,
+<https://sawa.github.io/resources/CZ0643> a ns1:Concept ;
+    ns1:prefLabel "CZ0643"@cs,
         "CZ0643"@en .
 
-<https://sawa.github.io/resources/CZ0644> a ns2:Concept ;
-    ns2:prefLabel "CZ0644"@cs,
+<https://sawa.github.io/resources/CZ0644> a ns1:Concept ;
+    ns1:prefLabel "CZ0644"@cs,
         "CZ0644"@en .
 
-<https://sawa.github.io/resources/CZ0645> a ns2:Concept ;
-    ns2:prefLabel "CZ0645"@cs,
+<https://sawa.github.io/resources/CZ0645> a ns1:Concept ;
+    ns1:prefLabel "CZ0645"@cs,
         "CZ0645"@en .
 
-<https://sawa.github.io/resources/CZ0646> a ns2:Concept ;
-    ns2:prefLabel "CZ0646"@cs,
+<https://sawa.github.io/resources/CZ0646> a ns1:Concept ;
+    ns1:prefLabel "CZ0646"@cs,
         "CZ0646"@en .
 
-<https://sawa.github.io/resources/CZ0647> a ns2:Concept ;
-    ns2:prefLabel "CZ0647"@cs,
+<https://sawa.github.io/resources/CZ0647> a ns1:Concept ;
+    ns1:prefLabel "CZ0647"@cs,
         "CZ0647"@en .
 
-<https://sawa.github.io/resources/CZ0711> a ns2:Concept ;
-    ns2:prefLabel "CZ0711"@cs,
+<https://sawa.github.io/resources/CZ0711> a ns1:Concept ;
+    ns1:prefLabel "CZ0711"@cs,
         "CZ0711"@en .
 
-<https://sawa.github.io/resources/CZ0712> a ns2:Concept ;
-    ns2:prefLabel "CZ0712"@cs,
+<https://sawa.github.io/resources/CZ0712> a ns1:Concept ;
+    ns1:prefLabel "CZ0712"@cs,
         "CZ0712"@en .
 
-<https://sawa.github.io/resources/CZ0713> a ns2:Concept ;
-    ns2:prefLabel "CZ0713"@cs,
+<https://sawa.github.io/resources/CZ0713> a ns1:Concept ;
+    ns1:prefLabel "CZ0713"@cs,
         "CZ0713"@en .
 
-<https://sawa.github.io/resources/CZ0714> a ns2:Concept ;
-    ns2:prefLabel "CZ0714"@cs,
+<https://sawa.github.io/resources/CZ0714> a ns1:Concept ;
+    ns1:prefLabel "CZ0714"@cs,
         "CZ0714"@en .
 
-<https://sawa.github.io/resources/CZ0715> a ns2:Concept ;
-    ns2:prefLabel "CZ0715"@cs,
+<https://sawa.github.io/resources/CZ0715> a ns1:Concept ;
+    ns1:prefLabel "CZ0715"@cs,
         "CZ0715"@en .
 
-<https://sawa.github.io/resources/CZ0721> a ns2:Concept ;
-    ns2:prefLabel "CZ0721"@cs,
+<https://sawa.github.io/resources/CZ0721> a ns1:Concept ;
+    ns1:prefLabel "CZ0721"@cs,
         "CZ0721"@en .
 
-<https://sawa.github.io/resources/CZ0722> a ns2:Concept ;
-    ns2:prefLabel "CZ0722"@cs,
+<https://sawa.github.io/resources/CZ0722> a ns1:Concept ;
+    ns1:prefLabel "CZ0722"@cs,
         "CZ0722"@en .
 
-<https://sawa.github.io/resources/CZ0723> a ns2:Concept ;
-    ns2:prefLabel "CZ0723"@cs,
+<https://sawa.github.io/resources/CZ0723> a ns1:Concept ;
+    ns1:prefLabel "CZ0723"@cs,
         "CZ0723"@en .
 
-<https://sawa.github.io/resources/CZ0724> a ns2:Concept ;
-    ns2:prefLabel "CZ0724"@cs,
+<https://sawa.github.io/resources/CZ0724> a ns1:Concept ;
+    ns1:prefLabel "CZ0724"@cs,
         "CZ0724"@en .
 
-<https://sawa.github.io/resources/CZ0801> a ns2:Concept ;
-    ns2:prefLabel "CZ0801"@cs,
+<https://sawa.github.io/resources/CZ0801> a ns1:Concept ;
+    ns1:prefLabel "CZ0801"@cs,
         "CZ0801"@en .
 
-<https://sawa.github.io/resources/CZ0802> a ns2:Concept ;
-    ns2:prefLabel "CZ0802"@cs,
+<https://sawa.github.io/resources/CZ0802> a ns1:Concept ;
+    ns1:prefLabel "CZ0802"@cs,
         "CZ0802"@en .
 
-<https://sawa.github.io/resources/CZ0803> a ns2:Concept ;
-    ns2:prefLabel "CZ0803"@cs,
+<https://sawa.github.io/resources/CZ0803> a ns1:Concept ;
+    ns1:prefLabel "CZ0803"@cs,
         "CZ0803"@en .
 
-<https://sawa.github.io/resources/CZ0804> a ns2:Concept ;
-    ns2:prefLabel "CZ0804"@cs,
+<https://sawa.github.io/resources/CZ0804> a ns1:Concept ;
+    ns1:prefLabel "CZ0804"@cs,
         "CZ0804"@en .
 
-<https://sawa.github.io/resources/CZ0805> a ns2:Concept ;
-    ns2:prefLabel "CZ0805"@cs,
+<https://sawa.github.io/resources/CZ0805> a ns1:Concept ;
+    ns1:prefLabel "CZ0805"@cs,
         "CZ0805"@en .
 
-<https://sawa.github.io/resources/CZ0806> a ns2:Concept ;
-    ns2:prefLabel "CZ0806"@cs,
+<https://sawa.github.io/resources/CZ0806> a ns1:Concept ;
+    ns1:prefLabel "CZ0806"@cs,
         "CZ0806"@en .
+
+<https://sawa.github.io/resources/District1> a ns1:Concept ;
+    ns1:broader <https://sawa.github.io/resources/Region1> ;
+    ns1:inScheme <https://sawa.github.io/resources/GeographicalAreas> ;
+    ns1:prefLabel "District 1"@en .
+
+<https://sawa.github.io/resources/District2> a ns1:Concept ;
+    ns1:broader <https://sawa.github.io/resources/Region1> ;
+    ns1:inScheme <https://sawa.github.io/resources/GeographicalAreas> ;
+    ns1:prefLabel "District 2"@en .
 
 <https://sawa.github.io/resources/publisher> a ns4:Organization ;
     ns4:name "Vydavatel"@cs,
         "Publisher"@en .
 
-<https://sawa.github.io/resources/dataCubeInstance> a ns1:DataSet ;
+<https://sawa.github.io/resources/Region1> a ns1:Concept ;
+    ns1:inScheme <https://sawa.github.io/resources/GeographicalAreas> ;
+    ns1:narrower <https://sawa.github.io/resources/District1>,
+        <https://sawa.github.io/resources/District2> ;
+    ns1:prefLabel "Region 1"@en ;
+    ns1:topConceptOf <https://sawa.github.io/resources/GeographicalAreas> .
+
+<https://sawa.github.io/resources/GeographicalAreas> a ns2:DataSet ;
+    rdfs:label "Geo area"@en ;
+    ns1:hasTopConcept <https://sawa.github.io/resources/Region1> .
+
+<https://sawa.github.io/resources/dataCubeInstance> a ns2:DataSet ;
     rdfs:label "Population 2021"@en ;
-    ns5:issued "2023-04-02"^^xsd:date ;
+    ns5:issued "2023-08-06"^^xsd:date ;
     ns5:license <https://example.com/license> ;
-    ns5:modified "2023-04-02"^^xsd:date ;
+    ns5:modified "2023-08-06"^^xsd:date ;
     ns5:publisher <https://sawa.github.io/resources/publisher> ;
-    ns1:structure ns3:structure .
+    ns2:structure ns3:structure .
 
