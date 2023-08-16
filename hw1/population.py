@@ -4,6 +4,7 @@ from datetime import datetime
 
 from rdflib import Graph, BNode, Literal, Namespace, URIRef
 from rdflib.namespace import QB, RDF, XSD, SKOS, DCTERMS, FOAF
+from helper import get_codes_hashmap
 
 NS = Namespace("https://sawa.github.io/ontology#")
 NSR = Namespace("https://sawa.github.io/resources/")
@@ -15,8 +16,9 @@ absolute_path = os.path.dirname(__file__)
 
 def main():
     hashmap = county_codelist_create()
+    codes = get_codes_hashmap()
     data_as_csv = load_csv_file_as_object(absolute_path + "/population.csv")
-    data_cube = as_data_cube(data_as_csv, hashmap)
+    data_cube = as_data_cube(data_as_csv, hashmap, codes)
     f = open(absolute_path + "/population.ttl", "w")
     f.write(data_cube.serialize(format="ttl"))
     f.close()
@@ -43,15 +45,13 @@ def load_csv_file_as_object(file_path: str):
     return result
 
 
-def as_data_cube(data, hashmap):
+def as_data_cube(data, hashmap, codes):
     result = Graph()
     dimensions = create_dimensions(result)
     measures = create_measure(result)
     structure = create_structure(result, dimensions, measures)
     dataset = create_dataset(result, structure)
-    create_observations(result, dataset, data, hashmap)
-    create_geographical_areas(result)
-
+    create_observations(result, dataset, data, hashmap, codes)
     return result
 
 
@@ -141,65 +141,41 @@ def create_dataset(collector: Graph, structure):
     return dataset
 
 
-def create_observations(collector: Graph, dataset, data, hashmap):
+def create_observations(collector: Graph, dataset, data, hashmap, codes):
     for index, row in enumerate(data):
         resource = NSR["observation-" + str(index).zfill(3)]
-        create_observation(collector, dataset, resource, row, hashmap)
-
-
-def create_observation(collector: Graph, dataset, resource, data, hashmap):
-    county_uri = NSR[data["vuzemi_kod"]]
-    region_uri = NSR[hashmap[data["vuzemi_kod"]]]
-
-    if (county_uri, RDF.type, SKOS.Concept) not in collector:
-        collector.add((county_uri, RDF.type, SKOS.Concept))
-        collector.add((county_uri, SKOS.prefLabel, Literal(
-            data["vuzemi_txt"], lang="cs")))
-        collector.add((county_uri, SKOS.prefLabel, Literal(
-            data["vuzemi_txt"], lang="en")))
+        create_observation(collector, dataset, resource, row, hashmap, codes)
+        
+        
+def create_observation(collector: Graph, dataset, resource, data, hashmap, codes):
+    cz_code = hashmap[data["vuzemi_kod"]]
+    region_uri = NSR[cz_code]
     
     if (region_uri, RDF.type, SKOS.Concept) not in collector:
         collector.add((region_uri, RDF.type, SKOS.Concept))
         collector.add((region_uri, SKOS.prefLabel, Literal(
-            hashmap[data["vuzemi_kod"]], lang="cs")))
+            cz_code, lang="cs")))
         collector.add((region_uri, SKOS.prefLabel, Literal(
-            hashmap[data["vuzemi_kod"]], lang="en")))
+            cz_code, lang="en")))
+        if cz_code[:-1] in codes:
+            county_uri = NSR[cz_code[:-1]]
+            if (county_uri, RDF.type, SKOS.Concept) not in collector:
+                collector.add((county_uri, RDF.type, SKOS.Concept))  
+                collector.add((county_uri, SKOS.prefLabel, Literal(
+                    cz_code[:-1], lang="cs")))
+                collector.add((county_uri, SKOS.prefLabel, Literal(
+                    cz_code[:-1], lang="en")))
+            collector.add((county_uri, SKOS.narrower, region_uri))
+            collector.add((region_uri, SKOS.broader, county_uri))
 
     collector.add((resource, RDF.type, QB.Observation))
     collector.add((resource, QB.dataSet, dataset))
     if data['vuzemi_cis'] == "101":
-        collector.add((resource, NS.county, county_uri))
+        if cz_code[:-1] in codes:
+            collector.add((resource, NS.county, county_uri))
         collector.add((resource, NS.region, region_uri))
     collector.add((resource, NS.measure, Literal(
         data["hodnota"], datatype=XSD.integer)))
-
-
-def create_geographical_areas(collector: Graph):
-    geo_areas = URIRef(NSR["GeographicalAreas"])
-    region1 = URIRef(NSR["Region1"])
-    district1 = URIRef(NSR["District1"])
-    district2 = URIRef(NSR["District2"])
-
-    collector.add((geo_areas, RDF.type, QB.DataSet))
-    collector.add((geo_areas, RDFS.label, Literal("Geo area", lang="en")))
-    collector.add((geo_areas, SKOS.hasTopConcept, region1))
-
-    collector.add((region1, RDF.type, SKOS.Concept))
-    collector.add((region1, SKOS.prefLabel, Literal("Region 1", lang="en")))
-    collector.add((region1, SKOS.narrower, district1))
-    collector.add((region1, SKOS.narrower, district2))
-    collector.add((region1, SKOS.topConceptOf, geo_areas))
-    collector.add((region1, SKOS.inScheme, geo_areas))
-
-    collector.add((district1, RDF.type, SKOS.Concept))
-    collector.add((district1, SKOS.prefLabel, Literal("District 1", lang="en")))
-    collector.add((district1, SKOS.broader, region1))
-    collector.add((district1, SKOS.inScheme, geo_areas))
-
-    collector.add((district2, RDF.type, SKOS.Concept))
-    collector.add((district2, SKOS.prefLabel, Literal("District 2", lang="en")))
-    collector.add((district2, SKOS.broader, region1))
-    collector.add((district2, SKOS.inScheme, geo_areas))
 
 if __name__ == "__main__":
     main()
