@@ -18,7 +18,4 @@ This course provides a comprehensive introduction to data engineering, focusing 
 For more details, please visit the [course website](https://www.ksi.mff.cuni.cz/teaching/ndbi046-web/).
 
 ## Contact
-For further information, contact:
-- **Petr Škoda**: [Contact Page](https://www.mff.cuni.cz)
-- Unofficial/Immediate feedback form: [Feedback Form](https://forms.gle)
-- Recordings: [YouTube Channel](https://www.youtube.com)
+For further information, contact: **Petr Škoda**
